@@ -55,7 +55,8 @@ const server=http.createServer(async(req,res)=>{
    }catch(e){state=snapshot;throw e;}
   });queue=run.catch(()=>{});return json(res,200,await run);
  }
- const routes={'/':'index.html','/app.js':'app.js','/style.css':'style.css'};const asset=routes[url.pathname];if(!asset){res.writeHead(404);return res.end('Not found');}
+ const routes={'/':'index.html','/app.js':'app.js','/api.js':'api.js','/style.css':'style.css'};const asset=routes[url.pathname];if(!asset){res.writeHead(404);return res.end('Not found');}
+ res.setHeader('Cache-Control','no-store');
  res.writeHead(200,{'content-type':asset.endsWith('.html')?'text/html':asset.endsWith('.css')?'text/css':'text/javascript'});res.end(await readFile(path.join(root,'public',asset)));
  }catch(e){json(res,400,{error:e.message});}
 });
