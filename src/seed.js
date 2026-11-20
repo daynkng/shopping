@@ -1,18 +1,23 @@
-export const personas = {
- maya: {id:'maya',name:'Maya',role:'The city commuter',description:'Design lead · Seattle · Commutes by bike',initials:'ML',color:'#287968'},
- jordan: {id:'jordan',name:'Jordan',role:'The everyday organizer',description:'Parent of two · Portland · Always on the move',initials:'JP',color:'#946442'}
+export const personas={
+ maya:{id:'maya',name:'Maya',role:'The city commuter',description:'Design lead · Seattle · Bikes to work',initials:'ML',color:'#287968',city:'Seattle, Washington',lifestyle:'Bikes to work with a 16-inch laptop. Wants compact gear that works from commute to presentation.',weather:{scenarioDate:'2026-12-04',fahrenheit:46,celsius:8,conditions:'Rain and cool wind',source:'Sample weather scenario — not a forecast'},jacket:'A rain-aware, presentation-ready layer for a carry-on trip.'},
+ jordan:{id:'jordan',name:'Jordan',role:'The everyday organizer',description:'Parent of two · Austin · School, work & family',initials:'JP',color:'#946442',city:'Austin, Texas',lifestyle:'Drives between school, work, and family activities. Carries snacks, water bottles, and everyday essentials.',weather:{scenarioDate:'2026-12-08',fahrenheit:75,celsius:24,conditions:'Mostly dry with warm afternoons',source:'Sample weather scenario — not a forecast'},jacket:'A lighter, washable layer for conference sessions and school visits.'}
 };
-const m=(owner,id,type,text,tags,source,extra={})=>({owner,id,type,text,tags,source,authorized:true,...extra});
-export const memories = [
- m('maya','m1','preference','Minimal design, dark colors, and a protected 16-inch laptop sleeve.',['backpack','minimal','laptop'],'Style preferences · Nov 12',{features:['minimal','laptop'],saved:true}),
- m('maya','m2','preference','I bike to work in Seattle, so rain protection matters.',['backpack','jacket','rain'],'Commute conversation · Nov 14',{features:['rain'],saved:true}),
- m('maya','m3','ownership','My old commuter bag has a broken zipper; I already own a bulky hiking pack.',['backpack'],'Purchase history · Oct 8',{features:['minimal']}),
- m('maya','m4','event','Design Forward conference, Dec 4–6. Presenting on stage, traveling with carry-on only.',['jacket','conference'],'Calendar · Design Forward',{features:['smart','packable'],date:'2026-12-04'}),
- m('maya','m5','preference','Prefer wrinkle-resistant layers that work for a presentation and dinner.',['jacket','conference'],'Travel notes · Nov 16',{features:['smart','packable'],saved:false}),
- m('jordan','j1','preference','Easy-clean materials and separate compartments for family essentials.',['backpack','organizer'],'Family shopping notes · Nov 9',{features:['organizer','easyclean'],saved:true}),
- m('jordan','j2','preference','Keep things practical and affordable. I like lightweight, roomy bags.',['backpack'],'Shopping chat · Nov 11',{features:['roomy','light'],saved:true}),
- m('jordan','j3','ownership','I own a small daypack that cannot fit snacks and two water bottles.',['backpack'],'Ownership review · Nov 10',{features:['roomy']}),
- m('jordan','j4','event','Education Summit, Dec 8–9. School visits and outdoor activities between sessions.',['jacket','conference'],'Calendar · Education Summit',{features:['rain','easyclean'],date:'2026-12-08'}),
- m('jordan','j5','preference','Washable, comfortable layers for all-day movement.',['jacket','conference'],'Wardrobe conversation · Nov 15',{features:['easyclean','light'],saved:false}),
- m('jordan','private','preference','Private medical note', ['backpack'],'Private dataset',{authorized:false,features:[]})
+const record=(owner,id,type,text,tags,features,source,saved=false)=>({owner,id,type,text,tags,features,source,authorized:true,saved,capturedAt:'2026-11-20'});
+export const memories=[
+ record('maya','m1','preference','Minimal styling and dark colors; protect my 16-inch work laptop.',['backpack'],['minimal','laptop'],'Sample profile · work and style',true),
+ record('maya','m2','preference','I bike to work in Seattle and prefer rain-resistant commuting gear.',['backpack','jacket'],['rain'],'Sample profile · daily commute',true),
+ record('maya','m3','ownership','My commuter bag has a broken zipper. I own a bulky hiking pack already.',['backpack'],['minimal'],'Sample ownership record'),
+ record('maya','m4','event','Design Forward presentation on Dec 4–6 in Seattle; carry-on travel only.',['jacket','conference'],['smart','packable'],'Sample calendar event'),
+ record('maya','m5','preference','Prefer polished, packable layers for presentations and dinner.',['jacket','conference'],['smart','packable'],'Sample wardrobe conversation'),
+ record('jordan','j1','preference','Practical organization, washable materials, and room for family essentials.',['backpack','jacket'],['organizer','easyclean','roomy'],'Sample family shopping profile',true),
+ record('jordan','j2','preference','Prefer lighter layers and roomy bags for driving between school and family activities in Austin.',['backpack','jacket'],['light','roomy'],'Sample lifestyle conversation',true),
+ record('jordan','j3','ownership','My small daypack cannot fit snacks, bottles, and two children’s essentials.',['backpack'],['roomy'],'Sample ownership record'),
+ record('jordan','j4','event','Education Summit on Dec 8–9 in Austin; school visits and outdoor breaks between sessions.',['jacket','conference'],['light','easyclean'],'Sample calendar event'),
+ record('jordan','j5','preference','Comfortable, washable layers for warm afternoons and air-conditioned rooms.',['jacket','conference'],['easyclean','light'],'Sample wardrobe conversation'),
+ {...record('jordan','private','preference','An unauthorized record must never be retrieved.',['backpack'],[],'Excluded dataset'),authorized:false}
 ];
+export function personaRecords(owner){const p=personas[owner];if(!p)throw new Error('Unknown persona.');return [
+ {owner,id:owner+'-profile',type:'profile',text:p.city+'. '+p.lifestyle,tags:['backpack','jacket'],source:'Sample persona profile',authorized:true,capturedAt:'2026-11-20',value:{city:p.city,lifestyle:p.lifestyle}},
+ {owner,id:owner+'-weather',type:'environment',text:`${p.weather.fahrenheit}°F / ${p.weather.celsius}°C; ${p.weather.conditions}. Sample scenario, not a forecast.`,tags:['backpack','jacket'],source:p.weather.source,authorized:true,capturedAt:'2026-11-20',value:p.weather},
+ ...memories.filter(m=>m.owner===owner&&m.authorized)
+];}

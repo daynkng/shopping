@@ -7,5 +7,5 @@ test('Vercel handlers return JSON and reject wrong methods and cross-origin requ
  let res=response();await search({method:'GET',headers:{}},res);assert.equal(res.statusCode,405);assert(res.body.error);
  res=response();await search({method:'POST',headers:{origin:'https://other.example',host:'known.example','content-type':'application/json'},body:{}},res);assert.equal(res.statusCode,403);
  res=response();await search({method:'POST',headers:{'content-type':'application/json'},body:{owner:'other'}},res);assert.equal(res.statusCode,400);
- res=response();config({method:'GET'},res);assert.deepEqual(Object.keys(res.body.providers),['openai','claude','grok']);assert(!JSON.stringify(res.body).includes('API_KEY'));
+ res=response();config({method:'GET'},res);assert.deepEqual(Object.keys(res.body.providers),['openai','claude','grok','cognee','superlinked']);assert(!JSON.stringify(res.body).includes('API_KEY'));
 });

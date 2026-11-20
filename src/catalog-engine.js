@@ -1,5 +1,4 @@
-import {MockCogneeAdapter} from './mock-cognee.js';
-import {MockSuperlinkedAdapter} from './mock-superlinked.js';
+import {SampleContextAdapter} from './sample-context.js';
 export const emptyConstraints=()=>({budget:null,features:[],size:null,color:null,minLaptopInches:null,maxWeightGrams:null,excludeIds:[],sort:'personal'});
 export function category(query,previous='backpack') {return /jacket|blazer|coat/i.test(query)?'jacket':/backpack|rucksack|bag/i.test(query)?'backpack':previous;}
 export function validateConstraints(value,ids) {
@@ -27,20 +26,17 @@ export function filtersFor(products,kind) {
  const features=kind==='jacket'?['smart','packable','rain','waterproof','easyclean']:['laptop','rain','waterproof','roomy','light','organizer'];
  return {features:features.filter(f=>products.some(p=>p.features.includes(f))),sizes:kind==='jacket'?[...new Set(products.flatMap(p=>p.sizes))].filter(s=>['XS','S','M','L','XL','XXL'].includes(s)):[]};
 }
-export async function retrieveContext({owner,query,kind,constraints=emptyConstraints(),savedPreferenceIds=[]},cognee=new MockCogneeAdapter()) {
- const memories=await cognee.retrieve({owner,query,kind,savedPreferenceIds});
- return {owner,query,kind,constraints,preferredFeatures:[],memories:memories.filter(m=>m.authorized===true&&m.owner===owner&&m.source&&['preference','ownership','event'].includes(m.type))};
+export async function retrieveContext({owner,query,kind,constraints=emptyConstraints(),savedPreferenceIds=[]},cognee=new SampleContextAdapter()) {
+ const data=await cognee.retrieve({owner,query,kind,savedPreferenceIds});
+ return {owner,query,kind,constraints,profile:data.profile,weather:data.weather,contextSource:data.source,memories:data.memories.filter(m=>m.authorized===true&&m.owner===owner&&m.source&&['preference','ownership','event'].includes(m.type))};
 }
-export async function rankCandidates({catalog,context,candidateIds,constraints=context.constraints,preferredFeatures=[],ranker=new MockSuperlinkedAdapter()}) {
+export async function rankCandidates({catalog,context,candidateIds,constraints=context.constraints,preferredFeatures=[],ranker}) {
  if(!Array.isArray(candidateIds)||candidateIds.some(id=>!catalog.some(p=>p.id===id)))throw new Error('Search returned a product outside the sourced catalog.');
  const candidates=[...new Set(candidateIds)].map(id=>catalog.find(p=>p.id===id));
  const accepted=candidates.map(p=>resolveVariant(p,constraints)).filter(p=>p&&eligible(p,{...context,constraints}));
- const ranked=await ranker.rank(accepted,context,{constraints,preferredFeatures});
- const audit={context,appliedConstraints:constraints,at:new Date().toISOString(),steps:[{stage:'Cognee',execution:'mock',memoryIds:context.memories.map(m=>m.id)},{stage:'Catalog discovery',candidateIds},{stage:'Catalog evidence validation',eligibleIds:accepted.map(p=>p.id),rejectedIds:candidates.filter(p=>!accepted.some(a=>a.id===p.id)).map(p=>p.id),verification:'snapshot—not live inventory'},{stage:'Superlinked',execution:'mock',rankedIds:ranked.map(p=>p.id)}]};
+ if(!ranker)throw new Error('A Superlinked connection is required.');
+ const ranked=accepted.length?await ranker.rank(accepted,context,{constraints,preferredFeatures}):[];
+ if(!Array.isArray(ranked)||ranked.length!==accepted.length||new Set(ranked.map(p=>p.id)).size!==accepted.length||ranked.some(p=>!accepted.some(a=>a.id===p.id)||!Number.isFinite(p.score)))throw new Error('Invalid ranking response.');
+ const audit={context,appliedConstraints:constraints,at:new Date().toISOString(),steps:[{stage:context.contextSource==='cognee'?'Cognee':'Sample context',execution:context.contextSource==='cognee'?'live':'sample',memoryIds:context.memories.map(m=>m.id)},{stage:'Catalog discovery',candidateIds},{stage:'Catalog evidence validation',eligibleIds:accepted.map(p=>p.id),rejectedIds:candidates.filter(p=>!accepted.some(a=>a.id===p.id)).map(p=>p.id),verification:'snapshot—not live inventory'},{stage:'Superlinked',execution:accepted.length?'live':'not needed — no eligible products',rankedIds:ranked.map(p=>p.id)}]};
  return {products:ranked.slice(0,6),constraints,kind:context.kind,filters:filtersFor(catalog.filter(p=>p.kind===context.kind),context.kind),audit};
-}
-export async function catalogPreview(catalog,{owner,kind='backpack',constraints=emptyConstraints(),savedPreferenceIds=[]}) {
- const context=await retrieveContext({owner,query:kind,kind,constraints,savedPreferenceIds});
- const result=await rankCandidates({catalog,context,candidateIds:catalog.filter(p=>p.kind===kind).map(p=>p.id)});
- result.audit.steps[1].execution='catalog preview';return result;
 }

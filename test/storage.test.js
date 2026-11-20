@@ -1,12 +1,5 @@
-import test from 'node:test';
-import assert from 'node:assert/strict';
-import {readStore,writeStore,makeThread} from '../public/store.js';
-test('per-browser demo storage seeds once and persists persona-specific threads and selections',async()=>{
- const values=new Map();globalThis.localStorage={getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)};
- const state=await readStore();assert.equal(state.threads.length,2);assert(state.threads.every(t=>t.constraints.budget===null));
- const thread=makeThread('maya','Conference jacket');state.threads.push(thread);state.savedPreferenceIds.push('m5');state.cart.push({owner:'maya',id:'cart-test'});writeStore(state);
- const restored=await readStore();assert.equal(restored.threads.filter(t=>t.owner==='maya').length,2);assert.equal(restored.threads.filter(t=>t.owner==='jordan').length,1);assert(restored.savedPreferenceIds.includes('m5'));assert.equal(restored.cart.filter(c=>c.owner==='jordan').length,0);
-});
-test('unreadable browser state is preserved and reported',async()=>{
- globalThis.localStorage={getItem:()=>'{bad',setItem:()=>assert.fail('Must not overwrite unreadable data')};await assert.rejects(readStore(),/existing browser data has been kept/);
-});
+import test from 'node:test';import assert from 'node:assert/strict';import {readStore,writeStore,makeThread,resetPersona} from '../public/store.js';
+const storage=()=>{const values=new Map();globalThis.localStorage={getItem:k=>values.get(k)||null,setItem:(k,v)=>values.set(k,v)};return values;};
+test('two persona demos start unranked without hidden budgets and persist independently',async()=>{storage();const s=await readStore();assert.equal(s.version,3);assert.equal(s.threads.length,2);assert(s.threads.every(t=>t.constraints.budget===null&&!t.messages.length));s.threads.push(makeThread('maya','Conference jacket'));s.savedPreferenceIds.push('m5');s.cart.push({owner:'maya',id:'selection'});writeStore(s);const r=await readStore();assert.equal(r.threads.filter(t=>t.owner==='maya').length,2);assert.equal(r.threads.filter(t=>t.owner==='jordan').length,1);resetPersona(r,'maya');assert.equal(r.cart.length,0);assert(r.savedPreferenceIds.includes('m5'));assert.equal(r.threads.filter(t=>t.owner==='jordan').length,1);});
+test('old cached rankings are invalidated while user text and original data are kept',async()=>{const values=storage();const old={threads:[{owner:'maya',title:'Old chat',messages:[{role:'user',text:'Backpack'},{role:'assistant',text:'Old result',products:[{id:'old'}],audit:{}}]}],savedPreferenceIds:[],cart:[],orders:[]};values.set('known-demo-v2',JSON.stringify(old));const s=await readStore();assert(s.threads[0].needsRefresh);assert(s.threads[0].messages.every(m=>m.role==='user'));assert.equal(values.get('known-demo-v2'),JSON.stringify(old));});
+test('unreadable current state is preserved and reported',async()=>{globalThis.localStorage={getItem:()=>'{bad',setItem:()=>assert.fail('Must not overwrite unreadable data')};await assert.rejects(readStore(),/kept/);});

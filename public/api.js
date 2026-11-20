@@ -7,7 +7,7 @@ export async function requestJson(url, options = {}, { fetchImpl = fetch, wait =
   for (let attempt = 0; attempt < attempts; attempt++) {
     let response;
     try {
-      response = await fetchImpl(url, { ...options, cache: 'no-store', headers: { Accept: 'application/json', ...options.headers }, signal: AbortSignal.timeout(30000) });
+      response = await fetchImpl(url, { ...options, cache: 'no-store', headers: { Accept: 'application/json', ...options.headers }, signal: AbortSignal.timeout(65000) });
     } catch {
       if (attempt + 1 < attempts) { await wait(300 * (attempt + 1)); continue; }
       throw new Error(unavailable);
