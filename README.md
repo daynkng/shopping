@@ -1,131 +1,89 @@
 # Known
 
-A runnable personal shopping prototype. **Cognee memory feeds discovery before ranking.** Products appear inside shopping chat threads, with persona-specific results and inspectable evidence.
+A personal shopping demo with 24 real products, two personas, shopping threads, natural follow-ups, ranking evidence, and a simulated cart.
 
-## Run
+## Run locally
 
-Requires Node.js 22+ (no packages to install).
+Requires Node 22.9+ (Node 22 is configured for Vercel). No dependencies to install.
 
 ```sh
 cd /Users/dayeon/Repository/shopping
 cp .env.example .env
+# Add OPENAI_API_KEY to .env for conversational searches.
 npm start
 ```
 
-Open http://127.0.0.1:4317. From inside this directory, just run `npm start`. Run `npm test` for the pipeline tests; `npm run dev` enables server reloads. The app uses no CDN, external fonts, telemetry, or external images.
+Open http://127.0.0.1:4317. `npm run dev` restarts the server when files change. `npm test` runs regression tests. `npm run build` creates `dist/` for deployment.
 
-Default mode is **demo**. All products, prices, stock, personal memories, provider activity, and ranking scores are fictional and explicitly labeled. There is no payment integration. Manual and agent-assisted checkout both create local simulated receipts after review and a second inventory/price/constraint check.
+Initial real-product results, budget/attribute filters, persona switching, memory search, preference saving, cart review, and simulated receipts work without keys. Natural conversation uses an **actual OpenAI call** and requires `OPENAI_API_KEY`. Without it, a search displays a connection message; no successful model call is simulated. A jacket suggestion can still open an initial catalog preview without a key.
 
-## Demo walkthrough
+## Deploy on Vercel
 
-1. Maya opens on “Find me a backpack,” with product cards already in chat. Metro Commuter ranks first because of laptop, minimal style, and rain-related memories.
-2. Click a rank or match score to inspect memory provenance, matched features, variant verification, and the catalog citation. Open the complete audit for the actual discovery queries and exact scoped context.
-3. Switch to Jordan. The same request favors Day Together Organizer because of organization, easy-clean materials, and capacity. Persona state, carts, threads, and receipts remain separate.
-4. Adjust budget, rain protection, or jacket size within a thread. Apply runs the full pipeline again. Every submitted message also runs a new retrieval and search. Hard constraints survive follow-ups within that thread.
-5. Under Suggested for You, inspect “Why this?” and start a conference-jacket thread. Maya’s presentation/carry-on context favors Studio Travel Blazer; Jordan’s school-visit context favors Field Day Jacket.
-6. Open My Context. Search “layers,” inspect a retrieved preference, and add it to Stable preferences. Ownership and Upcoming events stay separate; calendar events cannot be converted to preferences.
-7. Add a product to cart, review either checkout path, and explicitly confirm a simulated order. No money is moved.
+Import `daynkng/shopping`. Repository root is the project root. The checked-in `vercel.json` selects Other, runs `npm run build`, and serves `dist/`. The root `api/search.js` and `api/config.js` are Vercel Functions; do not deploy `public/` alone or rewrite API requests to `index.html`.
 
-Demo search supports backpacks and jackets. Natural-language hard constraints support budget phrases (under/below/up to/max/budget), rain protection, and size XS–XXL. The form is the authoritative way to set other thread constraints. This is a finite catalog simulator, not a general language model. Demo source links use example.com and do not represent merchant pages.
+Set these server-side variables in Vercel Project Settings → Environment Variables, then redeploy:
 
-## Architecture and implementation plan
+```text
+OPENAI_API_KEY=<your key>
+OPENAI_MODEL=gpt-4.1-mini
+```
 
-Implemented sequence:
+Use an OpenAI project key with access to the selected model. The model can be changed through `OPENAI_MODEL` to a Responses API model supporting strict structured outputs. The key is never bundled into the client. Claude and Grok are modular, unconfigured adapter extension points. Settings lists only agent connection configuration, not Cognee, Superlinked, or execution mode. “Configured” describes key presence, not a successful test call.
+
+Threads, saved preferences, carts, and receipts persist in this browser’s localStorage (`known-demo-v2`), separated by fictional persona. No server filesystem or shared database is needed. Old `.data/` files from the previous local-only prototype are left untouched and are no longer used. Browser data does not synchronize across devices or deployment origins. Corrupt stored data is reported without being overwritten. The API is stateless and does not retain conversations; OpenAI requests use `store: false`.
+
+For a public demo, configure traffic limits in Vercel and a spend limit on the OpenAI project to bound API costs. No account system or real-person personal-data storage is included.
+
+## What the demo does
+
+- Start from Maya’s backpack results, then switch to Jordan to see a different ranking.
+- Every new thread starts without a hidden budget. Budget and relevant attribute filters appear below search results, never in an empty thread.
+- Click the whole jacket suggestion to open a separate conference-shopping chat.
+- With OpenAI configured, try: “under $150,” “lighter but still fits my 16-inch laptop,” “something more formal,” “only black,” “show alternatives to the first one,” or “remove the budget.” The model receives recent conversation, prior displayed result IDs, existing constraints, and scoped memory before selecting products.
+- A clearly different product category changes the shopping category. Ambiguous product references return a clarification. Empty results do not silently relax requirements.
+- Rank badges and “Why this ranks” open evidence. “Context & sources” lets users inspect memory provenance and add retrieved preferences. Calendar events remain separate from preferences. Ownership is available internally but has no “What I own” page section.
+- Checkout is explicitly simulated. Both manual and agent-assisted review create a local receipt only. No merchant order, payment, live stock check, or real purchase is executed. Real merchant links open product pages.
+
+## Real product catalog
+
+`src/catalog.js` contains exactly 12 backpacks and 12 jackets, captured from the public US merchant catalogs on **November 20, 2026**:
+
+- [Aer](https://aersf.com/products.json?limit=250): six city, tech, work/gym, and travel backpacks.
+- [Topo Designs](https://topodesigns.com/products.json?limit=250): six mini, day, commuter, tech, and travel backpacks.
+- [Taylor Stitch](https://www.taylorstitch.com/products.json?limit=250): six sportcoats, wool jackets, canvas jackets, and shirt jackets.
+- [Outdoor Research](https://www.outdoorresearch.com/products.json?limit=250): six weather shells, insulated jackets, and fleece jackets.
+
+Each record includes a canonical merchant URL, catalog source URL, capture date, original photo URL, local photo, price/currency, variant IDs and snapshot prices, known sizes/colors, and available measurements. Locally bundled photos were retrieved from the corresponding merchants’ public product image URLs; their brands retain ownership. See `CATALOG_SOURCES.md` for the per-product source index.
+
+Aer weights and 16-inch laptop specifications were also checked on the individual merchant pages. Unknown weights, capacities, and laptop dimensions remain null and cannot satisfy hard numeric requirements. Do not infer that a water-resistant product is waterproof. Tailored style, minimalist styling, roominess, organization, and washability tags are editorial classifications grounded in product descriptions/care instructions, identified in each record and ranking details.
+
+**Prices and availability are snapshots, not live verification.** Cards say “Price snapshot.” Variant selection uses matching size/color and snapshot price; variants recorded unavailable are excluded. Source timestamps are never relabeled as current checks. Representative product photos may show a different color than a chosen variant; the merchant page is authoritative. No invented inventory counts are displayed.
+
+## Architecture
 
 ```mermaid
 flowchart TD
-    Request[Shopping request + thread constraints] --> Cognee[Retrieve authorized relevant Cognee memories]
-    Cognee --> Scope[Structured scoped context + typed provenance]
-    Scope --> Agent[Selected OpenAI / Claude / Grok discovery adapter]
-    Agent --> Candidates[Queries + cited candidate variant identities]
-    Candidates --> Verify[Commerce adapter resolves variants and refreshes stock/price]
-    Verify --> Filter[Hard eligibility gate]
-    Filter --> Rank[Superlinked reranking adapter]
-    Scope --> Rank
-    Rank --> Chat[Ranked cards + evidence + audit in chat]
-    Chat --> Cart[Persona cart]
-    Cart --> Review[Manual or agent-assisted review]
-    Review --> Recheck[Price / stock / constraints checked again]
-    Recheck --> Receipt[Explicitly simulated receipt]
+  User[Request / follow-up + thread state] --> Cognee[MockCogneeAdapter retrieves relevant typed memories]
+  Cognee --> Context[Authorized scoped context + provenance]
+  Context --> OpenAI[Actual OpenAI Responses call selects catalog IDs]
+  Catalog[Authoritative real-product catalog] --> OpenAI
+  OpenAI --> Validate[Validate intent, IDs, variants and hard constraints]
+  Validate --> Superlinked[MockSuperlinkedAdapter reranks eligible products]
+  Context --> Superlinked
+  Superlinked --> Chat[Chat cards + evidence + audit]
+  Chat --> Browser[Browser threads / preferences / cart / receipts]
 ```
 
-- `src/seed.js`: runnable personas, typed memories, fictional variant catalog.
-- `src/adapters.js`: interchangeable retrieval, discovery, verification, and reranking adapters.
-- `src/pipeline.js`: enforces retrieval before discovery; uses one context object for discovery and reranking; filters uncited candidates and rejects ineligible variants before ranking. It ignores unknown/duplicate ranking IDs.
-- `server.js`: local HTTP API, serialized mutations, atomic file persistence, checkout recheck. Successful searches retain per-request structured audits.
-- `public/`: responsive chat UI, threads, memory workflow, cart, evidence dialogs, architecture map.
-- `test/`: pipeline ordering, context scope, discovery personalization, variant eligibility, thread constraints, invalid output, and honest configuration failures.
+`MockCogneeAdapter.retrieve(scope)` and `MockSuperlinkedAdapter.rank(products, context, intent)` are explicit mock connection boundaries, replaceable by real implementations. They do not call either vendor. On **every conversational request**, retrieval completes before the agent call. Discovery and reranking receive the same unchanged context object; the agent’s interpreted constraints and soft preferences are carried separately into eligibility/ranking and recorded in the audit.
 
-Context is data, never system instructions. Gateway implementations must maintain that boundary in model prompts and tools. Demo memory relevance uses tags; demo ranking is transparent feature scoring, **not Superlinked execution**. Authorized unsaved retrieved preferences can inform a request; “Add to preferences” pins them into the stable-preference view while preserving provenance.
+Demo context comes from the typed fictional persona seeds. The server reselects authorized memories for that persona rather than trusting arbitrary client-supplied memory text. Saved preference IDs pin existing retrieved preferences and preserve their original provenance. This is not authentication for real users.
 
-Demo score = `clamp(50 + 9 * matching memory feature count + round((1 - price/budget) * 10), 0, 99)`. Repeated features from independent memories add weight. This score is not a probability. Discovery first selects products matching scoped features; thus context changes candidate selection as well as final order.
+The mock ranker scores matching memory features, soft requested attributes, and conference fit. Price and known-weight sorting can override order. Hard filters exclude mismatches before ranking. The model only returns catalog IDs and intent, not trusted prices or inventory. The server resolves product facts from its catalog, rejects invented IDs, and caps visible results to six.
 
-## Optional live adapter contract
+`POST /api/search` receives `owner`, `provider`, `query`, recent `messages`, `kind`, `constraints`, `previousResultIds`, and `savedPreferenceIds`. It returns `reply`, `kind`, full updated `constraints`, ranked `products`, relevant `filters`, and an `audit`. Clarification responses contain a question and no new products. `GET /api/config` returns only agent configuration flags/model name. Unknown providers, malformed data, timeouts, API failures, and non-JSON responses yield clear errors. Mutations and paid model calls are not automatically retried.
 
-**Native vendor SDK integrations are not bundled.** The live path is a working HTTP adapter boundary for deployment-specific gateways; adding API keys alone will not connect vendor services. Set `COMMERCE_MODE=live`, implement the normalized gateways below, and configure URLs/tokens in `.env`. These URLs are **Known gateway URLs, not native Cognee/OpenAI/Anthropic/xAI/Superlinked endpoints**. Gateways translate between these stable application contracts and the vendor’s supported API and authentication. Missing configuration fails explicitly; there is no fallback to simulated success.
-
-Each gateway accepts `POST` JSON, uses `Authorization: Bearer <gateway token>`, must respond within 25 seconds, and returns JSON. Secrets remain server-side. Redirects are rejected. The same URL can handle several actions. A live request also requires the user to check the scoped context-sharing consent in chat.
-
-### Cognee gateway
-
-Request:
-
-```json
-{"action":"retrieve","owner":"maya","query":"Find me a backpack","kind":"backpack","types":["preference","ownership","event"]}
-```
-
-Response:
-
-```json
-{"memories":[{"id":"m1","owner":"maya","authorized":true,"type":"preference","text":"I need a protected laptop sleeve","tags":["backpack"],"features":["laptop"],"source":"User-approved conversation / source-id","saved":true}]}
-```
-
-My Context calls `retrieve` without `kind` for open memory searches. Saving a retrieved preference calls `{"action":"save_preference","owner":"maya","memoryId":"m1","source":"..."}` and expects a successful JSON response. Gateway authorization must authenticate the real principal, enforce their Cognee datasets/ACLs, and preserve provenance. The app additionally filters ownership, authorization, allowed memory types, and shopping relevance. Do not rely on a client-provided persona ID for production authorization.
-
-Cognee’s official [API documentation](https://docs.cognee.ai/api-reference/introduction) describes search and deployment-specific authentication. The gateway must normalize the actual results into the typed records above, rather than passing a prose completion as authorized memory.
-
-### Chosen search-provider gateway
-
-`OPENAI_GATEWAY_URL`, `CLAUDE_GATEWAY_URL`, and `GROK_GATEWAY_URL` are independent adapters. The app calls only the selected one:
-
-```json
-{"action":"discover","context":{"requestId":"...","owner":"maya","query":"...","kind":"backpack","constraints":{"budget":150,"rain":false,"size":null},"memories":[{"id":"m1","type":"preference","text":"...","source":"...","features":["laptop"]}]}}
-```
-
-Required response:
-
-```json
-{"queries":["16 inch laptop commuter backpack under $150"],"candidates":[{"productId":"merchant-product-1","variantId":"merchant-sku-1","citations":[{"url":"https://merchant.example/product/1","title":"Product listing","source":"Merchant catalog"}]}]}
-```
-
-The gateway must make the chosen vendor’s real search-agent call, pass this exact context directly into discovery, and provide executed search queries and citations. Configure model/tool choices in the gateway for your vendor account. No synthetic citations, invented products, or credential sharing with the browser. Product pages and personal memories are untrusted data; they must not authorize purchases or tool actions.
-
-### Commerce verification gateway
-
-Receives `{"action":"verify","candidates":[...],"context":{...}}`.
-
-Returns `{"products":[...]}`. Each product must contain `id`, `variantId`, `kind`, `name`, `description`, `price` (finite nonnegative number), `currency` (`USD` in this prototype), `stock`, `size`, `features`, `merchant`, `url`, `verified: true`, and fresh ISO `verifiedAt`. `color` is optional. Product/variant identities must match a cited candidate. Verification must actually resolve that exact merchant SKU and query current price/stock; do not trust model assertions. `rain` feature must reflect merchant evidence. The application rejects unknown variants, stale verification (>5 minutes), unavailable stock, and hard-constraint failures.
-
-### Superlinked gateway
-
-Receives `{"action":"rank","products":[eligible verified products],"context":{the same scoped context}}`.
-
-Returns:
-
-```json
-{"ranking":[{"productId":"merchant-product-1","variantId":"merchant-sku-1","score":88,"evidence":[{"memoryId":"m1","source":"...","text":"...","matchedFeatures":["laptop"]}]}]}
-```
-
-The gateway must execute your actual Superlinked schema/query and produce evidence tied to the input memory IDs. The app accepts only eligible variant identities and known evidence memory IDs. It does not claim that a gateway is working merely because its environment variables are present.
-
-**Live checkout is deliberately disabled server-side.** A real purchase integration requires merchant checkout, authenticated users, re-verification through the commerce provider, explicit transaction authorization, idempotency, and payment handling. The current reviewed demo paths are complete without those integrations.
-
-## Persistence, deployment, and limits
-
-This is a single-user local development app bound to loopback by default, with two fictional selectable personas, not two authenticated accounts. State persists in ignored `.data/state.json` with atomic writes. `.env` and state are ignored; never commit credentials or personal memories. To reset demo state, stop the app and move `.data/state.json` aside, then restart. Seeds are created on first demo boot. No database or package installation is required.
-
-Do not expose this local server publicly or put real personal data in it without authentication, server-side principal/dataset binding, session-bound consent, durable audit storage, and deployment hardening. No hosted Work MCP registration, native vendor deployment, or real merchant integration is claimed. Run it in Codex’s browser panel as a local app. The adapter boundaries are ready for those integrations.
+Native OpenAI integration uses the [Responses API structured-output format](https://developers.openai.com/api/docs/guides/structured-outputs?api-mode=responses), with catalog ID enums and validation after generation. Instructions keep memory and merchant content as untrusted data, bound the response, and prohibit invented product facts. Keep credentials server-side when adding another provider adapter.
 
 ## Validation
 
-`npm test` covers the critical privacy and architecture boundary: retrieval precedes discovery, the same scoped context reaches both discovery and ranking, unauthorized/cross-persona memories are excluded, and only eligible cited variants reach chat. Browser QA additionally exercises ranking dialogs, memory search/pinning, conference-jacket threads, cart addition, and agent-assisted simulated confirmation.
+Tests cover catalog completeness/photos, sourced variant filtering, persona isolation, null default budget, memory authorization, retrieval-before-discovery, unchanged context at reranking, structured OpenAI payloads, product-reference history, invented ID rejection, clarifications, missing credentials, provider failures, browser persistence, and JSON-response recovery. Mock transport tests do not claim a live OpenAI call. Live end-to-end conversation QA requires the configured key.

@@ -1,4 +1,4 @@
-const unavailable = 'Known could not reach its app server. Check that npm start is running, then try again.';
+const unavailable = 'Known could not reach its app server. Please try again shortly.';
 const delay = ms => new Promise(resolve => setTimeout(resolve, ms));
 
 export async function requestJson(url, options = {}, { fetchImpl = fetch, wait = delay } = {}) {
@@ -15,7 +15,7 @@ export async function requestJson(url, options = {}, { fetchImpl = fetch, wait =
     const contentType = response.headers.get('content-type') || '';
     if (!/\bapplication\/(?:[\w.-]+\+)?json\b/i.test(contentType)) {
       if (attempt + 1 < attempts) { await wait(300 * (attempt + 1)); continue; }
-      throw new Error('Known received a page instead of app data. Open the app through its running server at http://127.0.0.1:4317 and try again.');
+      throw new Error('Known received a page instead of app data. Please reload Known and try again.');
     }
     let data;
     try { data = await response.json(); }
