@@ -7,11 +7,15 @@ import config from './api/config.js';
 import context from './api/context.js';
 import preference from './api/preference.js';
 import connectionTest from './api/connection-test.js';
+import connections from './api/connections.js';
+import feedback from './api/feedback.js';
 const root=path.dirname(fileURLToPath(import.meta.url));
 const types={'.html':'text/html','.js':'text/javascript','.css':'text/css','.jpg':'image/jpeg','.png':'image/png','.webp':'image/webp','.json':'application/json'};
 http.createServer(async(req,res)=>{
  res.setHeader('X-Content-Type-Options','nosniff');res.setHeader('Cache-Control','no-store');
  const url=new URL(req.url,'http://localhost');
+ if(url.pathname==='/api/connections')return connections(req,res);
+ if(url.pathname==='/api/feedback')return feedback(req,res);
  if(url.pathname==='/api/search')return search(req,res);
  if(url.pathname==='/api/config')return config(req,res);
  if(url.pathname==='/api/context')return context(req,res);
@@ -19,7 +23,7 @@ http.createServer(async(req,res)=>{
  if(url.pathname==='/api/connection-test')return connectionTest(req,res);
  try{
   const prefix=url.pathname.startsWith('/src/')?'': 'public';
-  const relative=['/','/demo/maya','/demo/jordan'].includes(url.pathname.replace(/\/+$/,'')||'/')?'index.html':decodeURIComponent(url.pathname).replace(/^\//,'');
+  const relative=['/','/demo/maya','/demo/jordan','/profiles/maya','/profiles/jordan'].includes(url.pathname.replace(/\/+$/,'')||'/')?'index.html':decodeURIComponent(url.pathname).replace(/^\//,'');
   const base=path.resolve(root,prefix),filename=path.resolve(base,relative);
   if(!filename.startsWith(base+path.sep)||(!prefix&&!url.pathname.startsWith('/src/')))throw new Error('Not found');
   const bytes=await readFile(filename);res.setHeader('Content-Type',types[path.extname(filename)]||'application/octet-stream');res.end(bytes);

@@ -4,8 +4,8 @@ export const personas={
 };
 const record=(owner,id,type,text,tags,features,source,saved=false)=>({owner,id,type,text,tags,features,source,authorized:true,saved,capturedAt:'2026-11-20'});
 export const memories=[
- record('maya','m1','preference','Minimal styling and dark colors; protect my 16-inch work laptop.',['backpack'],['minimal','laptop'],'Sample profile · work and style',true),
- record('maya','m2','preference','I bike to work in Seattle and prefer rain-resistant commuting gear.',['backpack','jacket'],['rain'],'Sample profile · daily commute',true),
+ record('maya','m1','preference','Minimal styling and dark colors; protect my 16-inch work laptop.',['backpack','tote'],['minimal','laptop'],'Sample profile · work and style',true),
+ record('maya','m2','preference','I bike to work in Seattle and prefer rain-resistant commuting gear.',['backpack','tote','jacket'],['rain'],'Sample profile · daily commute',true),
  record('maya','m3','ownership','My commuter bag has a broken zipper. I own a bulky hiking pack already.',['backpack'],['minimal'],'Sample ownership record'),
  record('maya','m4','event','Design Forward presentation on Dec 4–6 in Seattle; carry-on travel only.',['jacket','conference'],['smart','packable'],'Sample calendar event'),
  record('maya','m5','preference','Prefer polished, packable layers for presentations and dinner.',['jacket','conference'],['smart','packable'],'Sample wardrobe conversation'),
@@ -17,7 +17,7 @@ export const memories=[
  {...record('jordan','private','preference','An unauthorized record must never be retrieved.',['backpack'],[],'Excluded dataset'),authorized:false}
 ];
 export function personaRecords(owner){const p=personas[owner];if(!p)throw new Error('Unknown persona.');return [
- {owner,id:owner+'-profile',type:'profile',text:p.city+'. '+p.lifestyle,tags:['backpack','jacket'],source:'Sample persona profile',authorized:true,capturedAt:'2026-11-20',value:{city:p.city,lifestyle:p.lifestyle}},
- {owner,id:owner+'-weather',type:'environment',text:`${p.weather.fahrenheit}°F / ${p.weather.celsius}°C; ${p.weather.conditions}. Sample scenario, not a forecast.`,tags:['backpack','jacket'],source:p.weather.source,authorized:true,capturedAt:'2026-11-20',value:p.weather},
+ {owner,id:owner+'-profile',type:'profile',text:p.city+'. '+p.lifestyle,tags:['backpack','tote','jacket'],source:'Sample persona profile',authorized:true,capturedAt:'2026-11-20',value:{city:p.city,lifestyle:p.lifestyle}},
+ {owner,id:owner+'-weather',type:'environment',text:`${p.weather.fahrenheit}°F / ${p.weather.celsius}°C; ${p.weather.conditions}. Sample scenario, not a forecast.`,tags:['backpack','tote','jacket'],source:p.weather.source,authorized:true,capturedAt:'2026-11-20',value:p.weather},
  ...memories.filter(m=>m.owner===owner&&m.authorized)
 ];}

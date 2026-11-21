@@ -6,7 +6,7 @@ const instructions=`You are Known, a concise personal shopping agent. Use ONLY t
 export class CatalogAgent{
  constructor(provider,{env=process.env,fetchImpl=fetch}={}){if(!Object.hasOwn(agentDefinitions,provider))throw new IntegrationError('Unknown agent.',400);this.provider=provider;this.env=env;this.fetch=fetchImpl;}
  async discover(context,{messages,previousResultIds}){
-  const d=agentDefinitions[this.provider],key=this.env[d.key];if(!key)throw new IntegrationError(`Connect ${d.name} in Vercel before starting this demo.`);
+  const d=agentDefinitions[this.provider],key=this.env[d.key];if(!key)throw new IntegrationError(`Connect ${d.name} in Settings to continue.`);
   const model=this.env[d.modelKey]||d.model;
   const content=JSON.stringify({scopedContext:context,messages,previousResultIds,catalog:catalog.map(({image,imageSourceUrl,...p})=>p)});
   let url,body,headers={'Content-Type':'application/json'};
@@ -25,7 +25,7 @@ export class CatalogAgent{
   try{return JSON.parse(text);}catch{throw new IntegrationError(`${d.name} did not return a readable product search.`,502);}
  }
  async test(){
-  const d=agentDefinitions[this.provider],key=this.env[d.key];if(!key)throw new IntegrationError(`Configure ${d.key} first.`);const model=this.env[d.modelKey]||d.model;
+  const d=agentDefinitions[this.provider],key=this.env[d.key];if(!key)throw new IntegrationError(`Connect ${d.name} in Settings first.`);const model=this.env[d.modelKey]||d.model;
   // A tiny generation checks credentials AND the selected model; no persona data is transmitted.
   let url,body,headers={'Content-Type':'application/json'};
   if(this.provider==='openai'){url='https://api.openai.com/v1/responses';headers.Authorization=`Bearer ${key}`;body={model,input:'Reply OK.',max_output_tokens:20,store:false};}

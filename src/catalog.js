@@ -1,4 +1,4 @@
-// Merchant catalog snapshots captured 2026-11-20. No live inventory claim.
+// Real merchant catalog snapshots. Unknown attributes remain null.
 export const catalog = [
   {
     "id": "aer-city-pack-2",
@@ -55,7 +55,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/AER21059_citypack2_black_34hero.jpg?v=1740163065&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/AER21059_citypack2_black_34hero.jpg?v=1740163065&width=700",
+    "modelKey": "aer-city-pack-2",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "aer-slim-pack-2",
@@ -97,7 +102,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/AER31019_slimpack2_black_34hero_1_d27556b4-daeb-4516-9eb9-941fb7b8e2c7.jpg?v=1756856367&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/AER31019_slimpack2_black_34hero_1_d27556b4-daeb-4516-9eb9-941fb7b8e2c7.jpg?v=1756856367&width=700",
+    "modelKey": "aer-slim-pack-2",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "aer-day-pack-3",
@@ -138,7 +148,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/1AER31014_daypack3_34hero.jpg?v=1708907708&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/1AER31014_daypack3_34hero.jpg?v=1708907708&width=700",
+    "modelKey": "aer-day-pack-3",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "aer-fit-pack-3",
@@ -185,7 +200,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/products/AER11012_fitpack3_black_34hero_2d93964b-7167-47bb-ac33-a3fda427b2be.jpg?v=1647555309&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/products/AER11012_fitpack3_black_34hero_2d93964b-7167-47bb-ac33-a3fda427b2be.jpg?v=1647555309&width=700",
+    "modelKey": "aer-fit-pack-3",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "aer-travel-pack-4-28l",
@@ -242,7 +262,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/AER21070_1_travelpack428l_black_34hero.jpg?v=1772217013&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/AER21070_1_travelpack428l_black_34hero.jpg?v=1772217013&width=700",
+    "modelKey": "aer-travel-pack-4-28l",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "aer-city-pack-pro-2-24l",
@@ -301,7 +326,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/AER21064_1_citypackpro224l_black_34hero.jpg?v=1774628962&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/AER21064_1_citypackpro224l_black_34hero.jpg?v=1774628962&width=700",
+    "modelKey": "aer-city-pack-pro-2-24l",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "topo-daypack-classic-navy",
@@ -335,7 +365,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/Daypack-Classic_c2d0be13-5651-4616-9816-3fe0bc7c3712.webp?v=1791986451&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/Daypack-Classic_c2d0be13-5651-4616-9816-3fe0bc7c3712.webp?v=1791986451&width=700",
+    "modelKey": "topo-daypack-classic-navy",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "topo-rover-pack-mini-bone-white-cobalt",
@@ -369,7 +404,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/F26-RoverPackMini-BoneWhite_Coblat-932439137_2.webp?v=1787006853&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/F26-RoverPackMini-BoneWhite_Coblat-932439137_2.webp?v=1787006853&width=700",
+    "modelKey": "topo-rover-pack-mini-bone-white-cobalt",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "topo-rover-pack-tech-black",
@@ -409,7 +449,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/Rover-Pack-Tech.webp?v=1792073856&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/Rover-Pack-Tech.webp?v=1792073856&width=700",
+    "modelKey": "topo-rover-pack-tech-black",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "topo-commuter-backpack-black-neutral",
@@ -450,7 +495,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/Commuter-Backpack_bcbea99f-04ed-49d2-86c8-d83ab615765a.webp?v=1791985582&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/Commuter-Backpack_bcbea99f-04ed-49d2-86c8-d83ab615765a.webp?v=1791985582&width=700",
+    "modelKey": "topo-commuter-backpack-black-neutral",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "topo-classic-teardrop-backpack-forest",
@@ -489,7 +539,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/S26-ClassicTeardropBackpack-Forest-932609301_2.webp?v=1779308561&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/S26-ClassicTeardropBackpack-Forest-932609301_2.webp?v=1779308561&width=700",
+    "modelKey": "topo-classic-teardrop-backpack-forest",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "topo-global-pro-backpack-ocean-blue",
@@ -525,7 +580,12 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/F26-GlobalProBackpack-OceanBlue-931604416_2.webp?v=1786557849&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0277/0693/files/F26-GlobalProBackpack-OceanBlue-931604416_2.webp?v=1786557849&width=700",
+    "modelKey": "topo-global-pro-backpack-ocean-blue",
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ]
   },
   {
     "id": "taylor-riley-sportcoat-in-dark-navy-corduroy-2611",
@@ -605,7 +665,10 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_The_Riley_Sportcoat_in_Dark_Navy_Corduroy_PDP_001.jpg?v=1791822946&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_The_Riley_Sportcoat_in_Dark_Navy_Corduroy_PDP_001.jpg?v=1791822946&width=700",
+    "modelKey": "taylor-riley-sportcoat-in-dark-navy-corduroy-2611",
+    "closure": null,
+    "carryingStyles": []
   },
   {
     "id": "taylor-ojai-jacket-in-topsoil-donegal-moon-wool-2610",
@@ -683,7 +746,10 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_The_Ojai_Jacket_in_Topsoil_Donegal_Moon_PDP_001.jpg?v=1793994013&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_The_Ojai_Jacket_in_Topsoil_Donegal_Moon_PDP_001.jpg?v=1793994013&width=700",
+    "modelKey": "taylor-ojai-jacket-in-topsoil-donegal-moon-wool-2610",
+    "closure": null,
+    "carryingStyles": []
   },
   {
     "id": "taylor-outpost-jacket-in-coal-chipped-canvas-2611",
@@ -761,7 +827,10 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_The_Outpost_Jacket_in_Coal_Chipped_Canvas_PDP_001.jpg?v=1794243767&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_The_Outpost_Jacket_in_Coal_Chipped_Canvas_PDP_001.jpg?v=1794243767&width=700",
+    "modelKey": "taylor-outpost-jacket-in-coal-chipped-canvas-2611",
+    "closure": null,
+    "carryingStyles": []
   },
   {
     "id": "taylor-maritime-shirt-jacket-in-burgundy-moleskin-twill-2609",
@@ -839,7 +908,10 @@ export const catalog = [
         "availableAtCapture": false
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/maritime-shirt-jacket-in-burgundy-moleskin-twill-2609_001.jpg?v=1790611810&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/maritime-shirt-jacket-in-burgundy-moleskin-twill-2609_001.jpg?v=1790611810&width=700",
+    "modelKey": "taylor-maritime-shirt-jacket-in-burgundy-moleskin-twill-2609",
+    "closure": null,
+    "carryingStyles": []
   },
   {
     "id": "taylor-kenne-shirt-jacket-in-blue-fog-cotton-wool-crepe-2607",
@@ -917,7 +989,10 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/kenne-shirt-jacket-in-blue-fog-cotton-wool-crepe-2607_001_cb35ef69-134c-4ce8-82bc-a6940d44e4f0.jpg?v=1790614761&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/kenne-shirt-jacket-in-blue-fog-cotton-wool-crepe-2607_001_cb35ef69-134c-4ce8-82bc-a6940d44e4f0.jpg?v=1790614761&width=700",
+    "modelKey": "taylor-kenne-shirt-jacket-in-blue-fog-cotton-wool-crepe-2607",
+    "closure": null,
+    "carryingStyles": []
   },
   {
     "id": "taylor-haight-jacket-in-light-wash-hemp-denim-2606",
@@ -995,7 +1070,10 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/haight-jacket-in-light-wash-hemp-denim-2606_001.jpg?v=1790616700&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/haight-jacket-in-light-wash-hemp-denim-2606_001.jpg?v=1790616700&width=700",
+    "modelKey": "taylor-haight-jacket-in-light-wash-hemp-denim-2606",
+    "closure": null,
+    "carryingStyles": []
   },
   {
     "id": "outdoor-mens-cloudchaser-3l-jacket-322497",
@@ -1174,7 +1252,10 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/3224972951A1.png?v=1772834344&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/3224972951A1.png?v=1772834344&width=700",
+    "modelKey": "outdoor-mens-cloudchaser-3l-jacket-322497",
+    "closure": null,
+    "carryingStyles": []
   },
   {
     "id": "outdoor-mens-superstrand-lt-jacket-289619",
@@ -1749,7 +1830,10 @@ export const catalog = [
         "availableAtCapture": false
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/2896193004A1.png?v=1785867366&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/2896193004A1.png?v=1785867366&width=700",
+    "modelKey": "outdoor-mens-superstrand-lt-jacket-289619",
+    "closure": null,
+    "carryingStyles": []
   },
   {
     "id": "outdoor-mens-helium-ul-jacket-322681",
@@ -2045,7 +2129,10 @@ export const catalog = [
         "availableAtCapture": false
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/3226813073A1.png?v=1784588374&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/3226813073A1.png?v=1784588374&width=700",
+    "modelKey": "outdoor-mens-helium-ul-jacket-322681",
+    "closure": null,
+    "carryingStyles": []
   },
   {
     "id": "outdoor-womens-helium-ul-jacket-322837",
@@ -2341,7 +2428,10 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/3228373066A1.png?v=1784588375&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/3228373066A1.png?v=1784588375&width=700",
+    "modelKey": "outdoor-womens-helium-ul-jacket-322837",
+    "closure": null,
+    "carryingStyles": []
   },
   {
     "id": "outdoor-mens-trail-mix-xt-fleece-jacket-322523",
@@ -2627,7 +2717,10 @@ export const catalog = [
         "availableAtCapture": false
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/3225232999A1.png?v=1784588376&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/3225232999A1.png?v=1784588376&width=700",
+    "modelKey": "outdoor-mens-trail-mix-xt-fleece-jacket-322523",
+    "closure": null,
+    "carryingStyles": []
   },
   {
     "id": "outdoor-womens-skychaser-jacket-322688",
@@ -2770,6 +2863,3125 @@ export const catalog = [
         "availableAtCapture": true
       }
     ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/3226882931A1.png?v=1770249318&width=700"
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0741/3602/7457/files/3226882931A1.png?v=1770249318&width=700",
+    "modelKey": "outdoor-womens-skychaser-jacket-322688",
+    "closure": null,
+    "carryingStyles": []
+  },
+  {
+    "id": "aer-tech-pack-3",
+    "modelKey": "aer-tech-pack-3",
+    "name": "Tech Pack 3",
+    "kind": "backpack",
+    "brand": "Aer",
+    "merchant": "Aer",
+    "price": 219.0,
+    "currency": "USD",
+    "features": [
+      "rain",
+      "laptop",
+      "organizer",
+      "minimal"
+    ],
+    "featureEvidence": {
+      "rain": "0D nylon face with a durable, weather resistant coating • YKK® zippers • Duraflex® hardware • Soft woven recycled nyl",
+      "laptop": "e By Style All Pouches + Kits Laptop Sleeves Packing Cubes Small Accessories Stockists About Us Contact Re",
+      "organizer": "he Tech Pack 3 is designed to organize and protect your tech essentials. It features a minimalist look and ",
+      "minimal": "ech essentials. It features a minimalist look and feel, multiple compartments for your everyday gear, and a"
+    },
+    "editorialFeatures": [
+      "organizer",
+      "minimal"
+    ],
+    "description": "The ultimate tech backpack The Tech Pack 3 is designed to organize and protect your tech essentials.",
+    "image": "/images/aer-tech-pack-3.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/1AER31015_techpack3_34hero.jpg?v=1708907861",
+    "sourceUrl": "https://aersf.com/products/tech-pack-3",
+    "catalogSource": "https://aersf.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Black"
+    ],
+    "weightGrams": 1451,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "40296834596960",
+        "size": null,
+        "color": "Black",
+        "price": 219.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "aer-flight-pack",
+    "modelKey": "aer-flight-pack",
+    "name": "Flight Pack 3",
+    "kind": "backpack",
+    "brand": "Aer",
+    "merchant": "Aer",
+    "price": 179.0,
+    "currency": "USD",
+    "features": [
+      "laptop",
+      "organizer"
+    ],
+    "featureEvidence": {
+      "laptop": "e By Style All Pouches + Kits Laptop Sleeves Packing Cubes Small Accessories Stockists About Us Contact Re",
+      "organizer": "brief. It also features smart organization to keep you organized and ready to work on the go. Move Smarter™"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "The versatile 3-way backpack designed for travel The Flight Pack 3 is a convertible 3-way backpack designed for work travel.",
+    "image": "/images/aer-flight-pack.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/AER21037_flightpack3_black_34hero.jpg?v=1689787804",
+    "sourceUrl": "https://aersf.com/products/flight-pack",
+    "catalogSource": "https://aersf.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Black",
+      "Gray"
+    ],
+    "weightGrams": 1542,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "39727804874848",
+        "size": null,
+        "color": "Black",
+        "price": 179.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "39727805038688",
+        "size": null,
+        "color": "Gray",
+        "price": 179.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "aer-gym-tote-2",
+    "modelKey": "aer-gym-tote-2",
+    "name": "Gym Tote 2",
+    "kind": "tote",
+    "brand": "Aer",
+    "merchant": "Aer",
+    "price": 139.0,
+    "currency": "USD",
+    "features": [
+      "organizer"
+    ],
+    "featureEvidence": {
+      "organizer": " Tote 2 keeps your essentials organized with separate shoe compartment and a clean, city-ready design. Move"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "The everyday gym/work tote bag For work, the gym, and everything in between.",
+    "image": "/images/aer-gym-tote-2.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/AER11018_gymtote2_black_34hero_ce1a8780-e543-43a3-a8bb-e4725fb0156a.jpg?v=1769628510",
+    "sourceUrl": "https://aersf.com/products/gym-tote-2",
+    "catalogSource": "https://aersf.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Black",
+      "Navy",
+      "Olive"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "42246515884128",
+        "size": null,
+        "color": "Black",
+        "price": 139.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42246515916896",
+        "size": null,
+        "color": "Navy",
+        "price": 139.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42246515949664",
+        "size": null,
+        "color": "Olive",
+        "price": 139.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "aer-simple-tote",
+    "modelKey": "aer-simple-tote",
+    "name": "Simple Tote",
+    "kind": "tote",
+    "brand": "Aer",
+    "merchant": "Aer",
+    "price": 139.0,
+    "currency": "USD",
+    "features": [
+      "organizer",
+      "light"
+    ],
+    "featureEvidence": {
+      "organizer": "le Ultra400X exterior, simple organization for your everyday gear, and a secure back pocket for your wallet",
+      "light": " A lightweight tote for exploring the city Travel light and easy with the all-new Si"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "A lightweight tote for exploring the city Travel light and easy with the all-new Simple Tote.",
+    "image": "/images/aer-simple-tote.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/AER79001_simpletote_ultra_black_34hero.jpg?v=1738970856",
+    "sourceUrl": "https://aersf.com/products/simple-tote",
+    "catalogSource": "https://aersf.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Black",
+      "White"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "41589898969184",
+        "size": null,
+        "color": "Black",
+        "price": 139.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "41589899001952",
+        "size": null,
+        "color": "White",
+        "price": 139.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "aer-city-tote",
+    "modelKey": "aer-city-tote",
+    "name": "City Tote",
+    "kind": "tote",
+    "brand": "Aer",
+    "merchant": "Aer",
+    "price": 129.0,
+    "currency": "USD",
+    "features": [
+      "organizer"
+    ],
+    "featureEvidence": {
+      "organizer": " A versatile, organized tote bag designed for the city The City Tote is the essential every"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "A versatile, organized tote bag designed for the city The City Tote is the essential everyday tote bag designed for the city.",
+    "image": "/images/aer-city-tote.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/1_AER21058_citytote_black_34hero.jpg?v=1691450115",
+    "sourceUrl": "https://aersf.com/products/city-tote",
+    "catalogSource": "https://aersf.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Black",
+      "Gray"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "39746832040032",
+        "size": null,
+        "color": "Black",
+        "price": 129.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "39746832072800",
+        "size": null,
+        "color": "Gray",
+        "price": 129.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "aer-go-tote-2",
+    "modelKey": "aer-go-tote-2",
+    "name": "Go Tote 2",
+    "kind": "tote",
+    "brand": "Aer",
+    "merchant": "Aer",
+    "price": 89.0,
+    "currency": "USD",
+    "features": [
+      "organizer",
+      "packable",
+      "light"
+    ],
+    "featureEvidence": {
+      "organizer": "d trims, quick-access storage pockets, and simple organization for your daily travel needs. Move Smarter™. ",
+      "packable": " The packable travel tote bag The Go Tote 2 is a lightweight, packable tote bag tha",
+      "light": "l tote bag The Go Tote 2 is a lightweight, packable tote bag that’s designed for all-day adventures in the city"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "The packable travel tote bag The Go Tote 2 is a lightweight, packable tote bag that’s designed for all-day adventures in the city.",
+    "image": "/images/aer-go-tote-2.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/aer_gotote2_black.jpg?v=1713810925",
+    "sourceUrl": "https://aersf.com/products/go-tote-2",
+    "catalogSource": "https://aersf.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Black",
+      "Lunar Gray",
+      "Olive"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "39611781644384",
+        "size": null,
+        "color": "Black",
+        "price": 89.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "39611781677152",
+        "size": null,
+        "color": "Lunar Gray",
+        "price": 89.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "39611781709920",
+        "size": null,
+        "color": "Olive",
+        "price": 89.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "tombihn-luminary-15",
+    "modelKey": "tombihn-luminary-15",
+    "name": "Luminary 15",
+    "kind": "backpack",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 180.0,
+    "currency": "USD",
+    "features": [
+      "rain",
+      "laptop",
+      "organizer",
+      "minimal"
+    ],
+    "featureEvidence": {
+      "rain": "ppers: 3x #8 YKK racquet coil water-repellent zippers with metal sliders Interior Zipper: 2x #5 YKK coil zipper wit",
+      "laptop": "taller items. Built-in padded laptop compartment with exterior entry that fits most 13” laptops and is sus",
+      "organizer": "y. Asymmetrical half-zip main compartment makes packing intuitive. Perfect for packing up your mobile office, h",
+      "minimal": "The Luminary 15 is a compact, streamlined backpack designed for the urban experience – days wandering museums, "
+    },
+    "editorialFeatures": [
+      "organizer",
+      "minimal"
+    ],
+    "description": "The Luminary 15 is a compact, streamlined backpack designed for the urban experience – days wandering museums, grabbing coffee, commuting across town, or heading out for the evening.",
+    "image": "/images/tombihn-luminary-15.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/files/TB0108-BK-Luminary15-BlackBallistic-1.jpg?v=1789675110",
+    "sourceUrl": "https://www.tombihn.com/products/luminary-15",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Agave Ballistic/Emerald 210 Cerylon",
+      "Black Ballistic/Northwest Sky 200 Halcyon",
+      "Deep Blue Ballistic/Coyote 200 Halcyon",
+      "Nebulous Ballistic/Ultraviolet 200 Halcyon",
+      "Aubergine Ballistic/Honeydew 200 Halcyon"
+    ],
+    "weightGrams": null,
+    "laptopInches": 13.0,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "48123720794301",
+        "size": null,
+        "color": "Agave Ballistic/Emerald 210 Cerylon",
+        "price": 180.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "48123716468925",
+        "size": null,
+        "color": "Black Ballistic/Northwest Sky 200 Halcyon",
+        "price": 180.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "48123716927677",
+        "size": null,
+        "color": "Deep Blue Ballistic/Coyote 200 Halcyon",
+        "price": 180.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "48123718205629",
+        "size": null,
+        "color": "Nebulous Ballistic/Ultraviolet 200 Halcyon",
+        "price": 180.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "48123720335549",
+        "size": null,
+        "color": "Aubergine Ballistic/Honeydew 200 Halcyon",
+        "price": 180.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "tombihn-adept",
+    "modelKey": "tombihn-adept",
+    "name": "Adept Roll-Top Backpack",
+    "kind": "backpack",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 280.0,
+    "currency": "USD",
+    "features": [
+      "rain",
+      "laptop"
+    ],
+    "featureEvidence": {
+      "rain": "Zippers \\n#8 YKK racquet coil water-repellent zippers with metal sliders Interior Zippers \\n #5 YKK coil zipper wit",
+      "laptop": " 13” devices. Built-in padded laptop compartment with exterior entry. Fits most 16\" laptops and is suspend"
+    },
+    "editorialFeatures": [],
+    "description": "The Adept is a roll-top backpack built for commuting, travel, and everyday carry.",
+    "image": "/images/tombihn-adept.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/files/TB0135-BK-Adept-BlackBallistic-GreyLabel.jpg?v=1786736340",
+    "sourceUrl": "https://www.tombihn.com/products/adept",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Sapphire 420 Spectron/Dusk 210 Cerylon",
+      "Black 420 Spectron/Zest 200 Halcyon",
+      "Black Ballistic/Northwest Sky 200 Halcyon",
+      "Nebulous Grey Ballistic/Emerald 210 Cerylon",
+      "Aubergine Ballistic/Fjord 200 Halcyon"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": 3.0,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "47949010305213",
+        "size": null,
+        "color": "Sapphire 420 Spectron/Dusk 210 Cerylon",
+        "price": 280.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "47949010272445",
+        "size": null,
+        "color": "Black 420 Spectron/Zest 200 Halcyon",
+        "price": 280.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "47949010337981",
+        "size": null,
+        "color": "Black Ballistic/Northwest Sky 200 Halcyon",
+        "price": 280.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "47949010370749",
+        "size": null,
+        "color": "Nebulous Grey Ballistic/Emerald 210 Cerylon",
+        "price": 280.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "47949010403517",
+        "size": null,
+        "color": "Aubergine Ballistic/Fjord 200 Halcyon",
+        "price": 280.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "tombihn-smart-alec-2",
+    "modelKey": "tombihn-smart-alec-2",
+    "name": "Smart Alec 2.0",
+    "kind": "backpack",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 315.0,
+    "currency": "USD",
+    "features": [
+      "rain",
+      "laptop",
+      "organizer",
+      "roomy"
+    ],
+    "featureEvidence": {
+      "rain": "rs \\n 1x #10 YKK Racquet-Coil Water-Repellent Zipper with lockable metal sliders \\n2x #8 YKK Racquet-Coil Water-Rep",
+      "laptop": "d keep them easy to find Easy Laptop Access : Two-way entry to a padded laptop compartment that fits most ",
+      "organizer": "ile offering a more open main compartment with fewer built-in elements, giving you room to make it your own. Th",
+      "roomy": "modern pack design—versatile, spacious, and built for customization. It shares the same frame and capacity a"
+    },
+    "editorialFeatures": [
+      "organizer",
+      "roomy"
+    ],
+    "description": "The Smart Alec 2.0 sits at the intersection of DIY spirit and modern pack design—versatile, spacious, and built for customization.",
+    "image": "/images/tombihn-smart-alec-2.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/files/TB0102-BT-1.jpg?v=1750867307",
+    "sourceUrl": "https://www.tombihn.com/products/smart-alec-2",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Black 420 Spectron/Tahoma 200 Halcyon",
+      "Bordeaux 420 Spectron/Lemonade 200 Halcyon",
+      "Aubergine Ballistic/Northwest Sky 200 Halcyon",
+      "Aubergine Ballistic/Selkie 200 Halcyon",
+      "Aubergine Ballistic/Wisteria 200 Halcyon",
+      "Black Ballistic/Northwest Sky 200 Halcyon",
+      "Deep Blue Ballistic/Zest 200 Halcyon",
+      "Nebulous Ballistic/Ultraviolet 200 Halcyon",
+      "Raspberry Ballistic/Mountain Grey 210 Cerylon",
+      "Saguaro Ballistic/Zest 200 Halcyon",
+      "Ursa Ballistic/Moss 210 Cerylon"
+    ],
+    "weightGrams": null,
+    "laptopInches": 16.0,
+    "capacityLiters": 26.0,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "45165663813821",
+        "size": null,
+        "color": "Black 420 Spectron/Tahoma 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "46463315214525",
+        "size": null,
+        "color": "Bordeaux 420 Spectron/Lemonade 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46463315476669",
+        "size": null,
+        "color": "Aubergine Ballistic/Northwest Sky 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "45355241701565",
+        "size": null,
+        "color": "Aubergine Ballistic/Selkie 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45165663682749",
+        "size": null,
+        "color": "Aubergine Ballistic/Wisteria 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45161206218941",
+        "size": null,
+        "color": "Black Ballistic/Northwest Sky 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "46463319572669",
+        "size": null,
+        "color": "Deep Blue Ballistic/Zest 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "46463322194109",
+        "size": null,
+        "color": "Nebulous Ballistic/Ultraviolet 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "45165663715517",
+        "size": null,
+        "color": "Raspberry Ballistic/Mountain Grey 210 Cerylon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45165663748285",
+        "size": null,
+        "color": "Saguaro Ballistic/Zest 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "45165663781053",
+        "size": null,
+        "color": "Ursa Ballistic/Moss 210 Cerylon",
+        "price": 315.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "tombihn-synik-26",
+    "modelKey": "tombihn-synik-26",
+    "name": "Synik 26",
+    "kind": "backpack",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 350.0,
+    "currency": "USD",
+    "features": [
+      "rain",
+      "laptop",
+      "organizer"
+    ],
+    "featureEvidence": {
+      "rain": "Zipper: 1x #10 YKK Aquaguard® water-repellent zipper with metal slider All Other Exterior Zippers: 6x #8 YKK racque",
+      "laptop": " still accommodating a larger laptop than the Synik 22. Features include: Two-point access laptop compartm",
+      "organizer": "lude: Two-point access laptop compartment (14\" x 9.5\" x 0.75\") that holds up to most 15\" laptops 5 exterior fro"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "The Synik 26 sits between the Synik 22 and Synik 30 in size.",
+    "image": "/images/tombihn-synik-26.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/files/TB0122-GXSL-Synik26-SunglowXPac-SangriaCerylon.jpg?v=1750260832",
+    "sourceUrl": "https://www.tombihn.com/products/synik-26",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Black 420 Spectron/Cerise 200 Halcyon",
+      "Black 420 Spectron/Northwest Sky 200 Halcyon",
+      "Black 420 Spectron/Selkie 200 Halcyon",
+      "Black 420 Spectron/Tahoma 200 Halcyon",
+      "Black 420 Spectron/Zest 200 Halcyon",
+      "Black 420 Spectron/Dusk 210 Cerylon",
+      "Black 420 Spectron/Emerald 210 Cerylon",
+      "Bordeaux 420 Spectron/Coyote 200 Halcyon",
+      "Bordeaux 420 Spectron/Persimmon 210 Cerylon",
+      "Sapphire 420 Spectron/Dusk 210 Cerylon",
+      "Sapphire 420 Spectron/Ultraviolet 200 Halcyon",
+      "Agave Ballistic/Fjord 200 Halcyon",
+      "Aubergine Ballistic/Emerald 210 Cerylon",
+      "Aubergine Ballistic/Kelpie 200 Halcyon",
+      "Aubergine Ballistic/Ultraviolet 200 Halcyon",
+      "Black Ballistic/Northwest Sky 200 Halcyon",
+      "Burnt Orange Ballistic/Northwest Sky 200 Halcyon",
+      "Deep Blue Ballistic/Honeydew 200 Halcyon",
+      "Deep Blue Ballistic/Zest 200 Halcyon",
+      "Deep Blue Ballistic/Persimmon 210 Cerylon",
+      "Mars Ballistic/Northwest Sky 200 Halcyon",
+      "Mars Ballistic/Persimmon 210 Cerylon",
+      "Nebulous Ballistic/Fjord 200 Halcyon",
+      "Nebulous Ballistic/Ultraviolet 200 Halcyon",
+      "Nebulous Ballistic/Sangria 210 Cerylon",
+      "Raspberry Ballistic/Acai 200 Halcyon",
+      "Raspberry Ballistic/Lemonade 200 Halcyon",
+      "Saguaro Ballistic/Sangria 210 Cerylon",
+      "Ursa Ballistic/Dusk 210 Cerylon",
+      "Wilderness Ballistic/Cantaloupe 200 Halcyon",
+      "Wilderness Ballistic/Dusk 210 Cerylon",
+      "Navy Parapack/Mountain 210 Cerylon",
+      "Periwinkle X-Pac/Emerald 210 Cerylon",
+      "Sunglow X-Pac/Sangria 210 Cerylon"
+    ],
+    "weightGrams": null,
+    "laptopInches": 15.0,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "46668741542077",
+        "size": null,
+        "color": "Black 420 Spectron/Cerise 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46927163064509",
+        "size": null,
+        "color": "Black 420 Spectron/Northwest Sky 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45896974631101",
+        "size": null,
+        "color": "Black 420 Spectron/Selkie 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45072190603453",
+        "size": null,
+        "color": "Black 420 Spectron/Tahoma 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46397978575037",
+        "size": null,
+        "color": "Black 420 Spectron/Zest 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46668748390589",
+        "size": null,
+        "color": "Black 420 Spectron/Dusk 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "47721467576509",
+        "size": null,
+        "color": "Black 420 Spectron/Emerald 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46286416314557",
+        "size": null,
+        "color": "Bordeaux 420 Spectron/Coyote 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46515035766973",
+        "size": null,
+        "color": "Bordeaux 420 Spectron/Persimmon 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "46927161524413",
+        "size": null,
+        "color": "Sapphire 420 Spectron/Dusk 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "48419547447485",
+        "size": null,
+        "color": "Sapphire 420 Spectron/Ultraviolet 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "46927164997821",
+        "size": null,
+        "color": "Agave Ballistic/Fjord 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "46927174467773",
+        "size": null,
+        "color": "Aubergine Ballistic/Emerald 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46381703659709",
+        "size": null,
+        "color": "Aubergine Ballistic/Kelpie 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46542221213885",
+        "size": null,
+        "color": "Aubergine Ballistic/Ultraviolet 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44502640001213",
+        "size": null,
+        "color": "Black Ballistic/Northwest Sky 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "44526586396861",
+        "size": null,
+        "color": "Burnt Orange Ballistic/Northwest Sky 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "48419786686653",
+        "size": null,
+        "color": "Deep Blue Ballistic/Honeydew 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "44526583513277",
+        "size": null,
+        "color": "Deep Blue Ballistic/Zest 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46542222295229",
+        "size": null,
+        "color": "Deep Blue Ballistic/Persimmon 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44526584463549",
+        "size": null,
+        "color": "Mars Ballistic/Northwest Sky 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "46381706215613",
+        "size": null,
+        "color": "Mars Ballistic/Persimmon 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "47721467969725",
+        "size": null,
+        "color": "Nebulous Ballistic/Fjord 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "46381699104957",
+        "size": null,
+        "color": "Nebulous Ballistic/Ultraviolet 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46542222622909",
+        "size": null,
+        "color": "Nebulous Ballistic/Sangria 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45343552307389",
+        "size": null,
+        "color": "Raspberry Ballistic/Acai 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46542223278269",
+        "size": null,
+        "color": "Raspberry Ballistic/Lemonade 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "44502640132285",
+        "size": null,
+        "color": "Saguaro Ballistic/Sangria 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45197950746813",
+        "size": null,
+        "color": "Ursa Ballistic/Dusk 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "48419815260349",
+        "size": null,
+        "color": "Wilderness Ballistic/Cantaloupe 200 Halcyon",
+        "price": 350.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "45896976269501",
+        "size": null,
+        "color": "Wilderness Ballistic/Dusk 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "44502640165053",
+        "size": null,
+        "color": "Navy Parapack/Mountain 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "47932190261437",
+        "size": null,
+        "color": "Periwinkle X-Pac/Emerald 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "44502640230589",
+        "size": null,
+        "color": "Sunglow X-Pac/Sangria 210 Cerylon",
+        "price": 350.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "tombihn-paragon2",
+    "modelKey": "tombihn-paragon2",
+    "name": "Paragon 2.0",
+    "kind": "backpack",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 220.0,
+    "currency": "USD",
+    "features": [
+      "rain",
+      "laptop",
+      "organizer",
+      "minimal"
+    ],
+    "featureEvidence": {
+      "rain": "YKK Racquet-Coil zippers with DWR coating, now featuring pull-tabs for easier zipping by providing a better gri",
+      "laptop": "back with integrated open-top laptop pocket, now upgraded with spacer mesh for improved breathability and ",
+      "organizer": "years past, the Simplex. Main compartment opens with #8 YKK Racquet-Coil zippers with DWR coating, now featurin",
+      "minimal": "ragon, a modern take on Tom's minimalist bag from years past, the Simplex. Main compartment opens with #8 Y"
+    },
+    "editorialFeatures": [
+      "organizer",
+      "minimal"
+    ],
+    "description": "The Paragon 2.0 is the second iteration of the Paragon, a modern take on Tom's minimalist bag from years past, the Simplex.",
+    "image": "/images/tombihn-paragon2.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/files/TB0927-VK-Paragon2-SaguaroBallistic.jpg?v=1728411772",
+    "sourceUrl": "https://www.tombihn.com/products/paragon2",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Aubergine Ballistic/Acai 200 Halcyon",
+      "Black Ballistic/Northwest Sky 200 Halcyon",
+      "Black Ballistic/Zest 200 Halcyon",
+      "Burnt Orange Ballistic/Dusk 210 Cerylon",
+      "Deep Blue Ballistic/Zest 200 Halcyon",
+      "Nebulous Grey Ballistic/Sangria 210 Cerylon",
+      "Saguaro Ballistic/Sangria 210 Cerylon",
+      "Wilderness Ballistic/Cobalt 210 Cerylon"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "45359191720125",
+        "size": null,
+        "color": "Aubergine Ballistic/Acai 200 Halcyon",
+        "price": 220.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "43097333792957",
+        "size": null,
+        "color": "Black Ballistic/Northwest Sky 200 Halcyon",
+        "price": 220.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "43097333661885",
+        "size": null,
+        "color": "Black Ballistic/Zest 200 Halcyon",
+        "price": 220.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "43179815731389",
+        "size": null,
+        "color": "Burnt Orange Ballistic/Dusk 210 Cerylon",
+        "price": 220.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44552318025917",
+        "size": null,
+        "color": "Deep Blue Ballistic/Zest 200 Halcyon",
+        "price": 220.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "43097333629117",
+        "size": null,
+        "color": "Nebulous Grey Ballistic/Sangria 210 Cerylon",
+        "price": 220.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44552326447293",
+        "size": null,
+        "color": "Saguaro Ballistic/Sangria 210 Cerylon",
+        "price": 220.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "43179817795773",
+        "size": null,
+        "color": "Wilderness Ballistic/Cobalt 210 Cerylon",
+        "price": 220.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "tombihn-addax-31",
+    "modelKey": "tombihn-addax-31",
+    "name": "Addax 31",
+    "kind": "backpack",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 315.0,
+    "currency": "USD",
+    "features": [
+      "laptop",
+      "organizer",
+      "roomy"
+    ],
+    "featureEvidence": {
+      "laptop": "eter, also includes an o-ring Laptop pocket sized large enough for most laptops (16.5\" x 10\" / 420mm x 255",
+      "organizer": "bottle carry, spacious device pockets, and a cavernous main compartment mean if you need to carry it, the A",
+      "roomy": "tions for water-bottle carry, spacious device pockets, and a cavernous main compartment mean if you need to "
+    },
+    "editorialFeatures": [
+      "organizer",
+      "roomy"
+    ],
+    "description": "The Addax 31 is a roll-top bag with room to spare!",
+    "image": "/images/tombihn-addax-31.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/products/447395320-addax31_constell.jpg?v=1684516320",
+    "sourceUrl": "https://www.tombihn.com/products/addax-31",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Deep Blue Ballistic/Taiga 200 Halcyon",
+      "Aubergine Ballistic/Northwest Sky 200 Halcyon",
+      "Black Ballistic/Mountain Grey 210 Cerylon",
+      "Burnt Orange Ballistic/Moab 200 Halcyon",
+      "Constellation Ballistic/Island 200 Halcyon",
+      "Coyote Ballistic/Mountain Grey 210 Cerylon",
+      "Nebulous Grey Ballistic/Island 200 Halcyon",
+      "Ursa Ballistic/Cobalt 210 Cerylon",
+      "Wilderness Ballistic/Taiga 200 Halcyon",
+      "Black X-Pac®/Solaris 200 Halcyon"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "42355546128573",
+        "size": null,
+        "color": "Deep Blue Ballistic/Taiga 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42355546292413",
+        "size": null,
+        "color": "Aubergine Ballistic/Northwest Sky 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42355546063037",
+        "size": null,
+        "color": "Black Ballistic/Mountain Grey 210 Cerylon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42355546226877",
+        "size": null,
+        "color": "Burnt Orange Ballistic/Moab 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42355546325181",
+        "size": null,
+        "color": "Constellation Ballistic/Island 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42355546161341",
+        "size": null,
+        "color": "Coyote Ballistic/Mountain Grey 210 Cerylon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42355546095805",
+        "size": null,
+        "color": "Nebulous Grey Ballistic/Island 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42355546259645",
+        "size": null,
+        "color": "Ursa Ballistic/Cobalt 210 Cerylon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42355546194109",
+        "size": null,
+        "color": "Wilderness Ballistic/Taiga 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42355546030269",
+        "size": null,
+        "color": "Black X-Pac®/Solaris 200 Halcyon",
+        "price": 315.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "tombihn-paramour",
+    "modelKey": "tombihn-paramour",
+    "name": "Paramour",
+    "kind": "backpack",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 190.0,
+    "currency": "USD",
+    "features": [
+      "rain",
+      "laptop",
+      "organizer",
+      "roomy"
+    ],
+    "featureEvidence": {
+      "rain": "ppers \\n2x #8 YKK Raquet-Coil Water-Repellent Zipper \\n \\n Back Panel \\nClosed-cell foam \\n \\n Shoulder Straps \\nEd",
+      "laptop": "ain compartment, and a padded laptop sleeve, the Paramour is crafted to keep up with you, wherever the day",
+      "organizer": "and-go gear, a capacious main compartment, and a padded laptop sleeve, the Paramour is crafted to keep up with ",
+      "roomy": "ocket for grab-and-go gear, a capacious main compartment, and a padded laptop sleeve, the Paramour is crafted"
+    },
+    "editorialFeatures": [
+      "organizer",
+      "roomy"
+    ],
+    "description": "The Paramour is built for the everyday shuffle: work bag, errand runner, weekend sidekick.",
+    "image": "/images/tombihn-paramour.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/files/TB0125-BK1D-Paramour-BlackBallistic-KiwiHalcyon.jpg?v=1750281558",
+    "sourceUrl": "https://www.tombihn.com/products/paramour",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Agave Ballistic/Dusk 210 Cerylon",
+      "Aubergine Ballistic/Emerald 210 Cerylon",
+      "Aubergine Ballistic/Selkie 200 Halcyon",
+      "Black Ballistic/Kiwi 200 Halcyon",
+      "Black Ballistic/Northwest Sky 200 Halcyon",
+      "Burnt Orange Ballistic/Northwest Sky 200 Halcyon",
+      "Coyote Ballistic/Northwest Sky 200 Halcyon",
+      "Deep Blue Ballistic/Moss 210 Cerylon",
+      "Deep Blue Ballistic/Fjord 200 Halcyon",
+      "Deep Blue Ballistic/Zest 200 Halcyon",
+      "Nebulous Grey Ballistic/Island 200 Halcyon",
+      "Nebulous Grey Ballistic/Kelpie 200 Halcyon",
+      "Ursa Ballistic/Dusk 210 Cerylon",
+      "Wilderness Ballistic/Zest 200 Halcyon",
+      "Nebulous Ballistic/Dusk 210 Cerylon",
+      "Black 420 Spectron/Emerald 210 Cerylon",
+      "Sapphire 420 Spectron/Dusk 210 Cerylon"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "46828388810941",
+        "size": null,
+        "color": "Agave Ballistic/Dusk 210 Cerylon",
+        "price": 190.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46828384551101",
+        "size": null,
+        "color": "Aubergine Ballistic/Emerald 210 Cerylon",
+        "price": 190.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "45739486576829",
+        "size": null,
+        "color": "Aubergine Ballistic/Selkie 200 Halcyon",
+        "price": 190.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44417096188093",
+        "size": null,
+        "color": "Black Ballistic/Kiwi 200 Halcyon",
+        "price": 190.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "41720603082941",
+        "size": null,
+        "color": "Black Ballistic/Northwest Sky 200 Halcyon",
+        "price": 190.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "41720845762749",
+        "size": null,
+        "color": "Burnt Orange Ballistic/Northwest Sky 200 Halcyon",
+        "price": 190.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "41720845795517",
+        "size": null,
+        "color": "Coyote Ballistic/Northwest Sky 200 Halcyon",
+        "price": 190.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42689852276925",
+        "size": null,
+        "color": "Deep Blue Ballistic/Moss 210 Cerylon",
+        "price": 190.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46828389007549",
+        "size": null,
+        "color": "Deep Blue Ballistic/Fjord 200 Halcyon",
+        "price": 190.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "45739419828413",
+        "size": null,
+        "color": "Deep Blue Ballistic/Zest 200 Halcyon",
+        "price": 190.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42691181019325",
+        "size": null,
+        "color": "Nebulous Grey Ballistic/Island 200 Halcyon",
+        "price": 190.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45739413110973",
+        "size": null,
+        "color": "Nebulous Grey Ballistic/Kelpie 200 Halcyon",
+        "price": 190.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42689855979709",
+        "size": null,
+        "color": "Ursa Ballistic/Dusk 210 Cerylon",
+        "price": 190.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45739419271357",
+        "size": null,
+        "color": "Wilderness Ballistic/Zest 200 Halcyon",
+        "price": 190.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "46828387664061",
+        "size": null,
+        "color": "Nebulous Ballistic/Dusk 210 Cerylon",
+        "price": 190.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "47722353918141",
+        "size": null,
+        "color": "Black 420 Spectron/Emerald 210 Cerylon",
+        "price": 190.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "47722359587005",
+        "size": null,
+        "color": "Sapphire 420 Spectron/Dusk 210 Cerylon",
+        "price": 190.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "tombihn-zeitgeist",
+    "modelKey": "tombihn-zeitgeist",
+    "name": "Zeitgeist",
+    "kind": "backpack",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 150.0,
+    "currency": "USD",
+    "features": [
+      "rain",
+      "laptop",
+      "organizer",
+      "minimal"
+    ],
+    "featureEvidence": {
+      "rain": " Zippers: #8 YKK racquet coil water-repellent zippers with metal sliders Made In: Seattle, WA, USA \", \"seasonal\": t",
+      "laptop": "ty\",\"occurrences\":3},{\"name\":\"laptop capacity\",\"occurrences\":1},{\"name\":\"storage\",\"occurrences\":1}],\"topic",
+      "organizer": "f spunk. Teardrop-shaped main compartment that opens wide and packs cleanly. Interior padded device sleeve idea",
+      "minimal": "st keeps things simple with a streamlined shape, a padded device pocket, a diagonal front pocket, and plenty of"
+    },
+    "editorialFeatures": [
+      "organizer",
+      "minimal"
+    ],
+    "description": "A compact, retro-inspired backpack reissued from a vintage TOM BIHN design from the ’90s.",
+    "image": "/images/tombihn-zeitgeist.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/products/Zeitgeist_Aub-Coy.jpg?v=1703023573",
+    "sourceUrl": "https://www.tombihn.com/products/zeitgeist",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Aubergine Ballistic/Fjord 200 Halcyon",
+      "Ursa Ballistic/Honeydew 200 Halcyon",
+      "Deep Blue Ballistic/Ultraviolet 200 Halcyon",
+      "Agave Ballistic/Emerald 210 Cerylon",
+      "Black Ballistic/Northwest Sky 200 Halcyon"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "48352521289917",
+        "size": null,
+        "color": "Aubergine Ballistic/Fjord 200 Halcyon",
+        "price": 150.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "48352531316925",
+        "size": null,
+        "color": "Ursa Ballistic/Honeydew 200 Halcyon",
+        "price": 150.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "48352576635069",
+        "size": null,
+        "color": "Deep Blue Ballistic/Ultraviolet 200 Halcyon",
+        "price": 150.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "48352587907261",
+        "size": null,
+        "color": "Agave Ballistic/Emerald 210 Cerylon",
+        "price": 150.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "48352633225405",
+        "size": null,
+        "color": "Black Ballistic/Northwest Sky 200 Halcyon",
+        "price": 150.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "tombihn-nomad-16",
+    "modelKey": "tombihn-nomad-16",
+    "name": "Nomad 16",
+    "kind": "tote",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 230.0,
+    "currency": "USD",
+    "features": [
+      "ziptop",
+      "laptop",
+      "organizer",
+      "roomy"
+    ],
+    "featureEvidence": {
+      "ziptop": "mad 11 and pushes it further. Main compartment zippers to protect your gear from the elements Padded device compartment (15.",
+      "laptop": "(15.5\" x 10.5\") fits most 16\" laptops Front pocket with internal slip pockets to keep your essentials orga",
+      "organizer": "1 and pushes it further. Main compartment zippers to protect your gear from the elements Padded device compartm",
+      "roomy": "eep your essentials organized Spacious main compartment with extra room and multiple O-rings for modular org"
+    },
+    "editorialFeatures": [
+      "organizer",
+      "roomy"
+    ],
+    "description": "The Nomad 16 takes everything you love about the Nomad 11 and pushes it further.",
+    "image": "/images/tombihn-nomad-16.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/files/BURNTORANGE-SANGRIA.jpg?v=1765305188",
+    "sourceUrl": "https://www.tombihn.com/products/nomad-16",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Aubergine Ballistic/Kelpie 200 Halcyon",
+      "Aubergine Ballistic/Wisteria 200 Halcyon",
+      "Aubergine Ballistic/Mountain 210 Cerylon",
+      "Black Ballistic/Island 200 Halcyon",
+      "Black Ballistic/Northwest Sky 200 Halcyon",
+      "Black Ballistic/Wisteria 200 Halcyon",
+      "Black Ballistic/Zest 200 Halcyon",
+      "Black Ballistic/Mountain 210 Cerylon",
+      "Burnt Orange Ballistic/Sangria 210 Cerylon",
+      "Deep Blue Ballistic/Ultraviolet 200 Halcyon",
+      "Mars Red Ballistic/Zest 200 Halcyon",
+      "Nebulous Ballistic/Persimmon 210 Cerylon",
+      "Raspberry Ballistic/Dusk 210 Cerylon",
+      "Saguaro Ballistic/Persimmon 210 Cerylon",
+      "Ursa Ballistic/Cobalt 210 Cerylon",
+      "Ursa Ballistic/Selkie 200 Halcyon",
+      "Ursa Ballistic/Tidal 200 Halcyon",
+      "Wilderness Ballistic/Coyote 200 Halcyon"
+    ],
+    "weightGrams": null,
+    "laptopInches": 16.0,
+    "capacityLiters": null,
+    "closure": "zip",
+    "carryingStyles": [
+      "shoulder"
+    ],
+    "variants": [
+      {
+        "id": "45914340884669",
+        "size": null,
+        "color": "Aubergine Ballistic/Kelpie 200 Halcyon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44987581235389",
+        "size": null,
+        "color": "Aubergine Ballistic/Wisteria 200 Halcyon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46430963499197",
+        "size": null,
+        "color": "Aubergine Ballistic/Mountain 210 Cerylon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45341135601853",
+        "size": null,
+        "color": "Black Ballistic/Island 200 Halcyon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44987581268157",
+        "size": null,
+        "color": "Black Ballistic/Northwest Sky 200 Halcyon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44987581300925",
+        "size": null,
+        "color": "Black Ballistic/Wisteria 200 Halcyon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45914339967165",
+        "size": null,
+        "color": "Black Ballistic/Zest 200 Halcyon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46463177851069",
+        "size": null,
+        "color": "Black Ballistic/Mountain 210 Cerylon",
+        "price": 230.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "44987581333693",
+        "size": null,
+        "color": "Burnt Orange Ballistic/Sangria 210 Cerylon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46430964777149",
+        "size": null,
+        "color": "Deep Blue Ballistic/Ultraviolet 200 Halcyon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45341136584893",
+        "size": null,
+        "color": "Mars Red Ballistic/Zest 200 Halcyon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46430965104829",
+        "size": null,
+        "color": "Nebulous Ballistic/Persimmon 210 Cerylon",
+        "price": 230.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "44987581366461",
+        "size": null,
+        "color": "Raspberry Ballistic/Dusk 210 Cerylon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44987581399229",
+        "size": null,
+        "color": "Saguaro Ballistic/Persimmon 210 Cerylon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45341137010877",
+        "size": null,
+        "color": "Ursa Ballistic/Cobalt 210 Cerylon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45914334265533",
+        "size": null,
+        "color": "Ursa Ballistic/Selkie 200 Halcyon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44987581202621",
+        "size": null,
+        "color": "Ursa Ballistic/Tidal 200 Halcyon",
+        "price": 230.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45914342850749",
+        "size": null,
+        "color": "Wilderness Ballistic/Coyote 200 Halcyon",
+        "price": 230.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "tombihn-large-zip-shop-bag",
+    "modelKey": "tombihn-large-zip-shop-bag",
+    "name": "Large Zip-Top Shop Bag",
+    "kind": "tote",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 105.0,
+    "currency": "USD",
+    "features": [
+      "ziptop",
+      "organizer",
+      "light"
+    ],
+    "featureEvidence": {
+      "ziptop": "op imported from Korea. Large zip-top main compartment for storing heavy items Contains two smaller 3D inte",
+      "organizer": "rom Korea. Large zip-top main compartment for storing heavy items Contains two smaller 3D interior pockets Cons",
+      "light": " Ultralight, durable, and comfortable multipurpose tote bag that zips shut to kee"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "Ultralight, durable, and comfortable multipurpose tote bag that zips shut to keep your items secured.",
+    "image": "/images/tombihn-large-zip-shop-bag.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/files/TB0614-ZD-LargeZipTopShopBag-ZestHalcyon.jpg?v=1769701720",
+    "sourceUrl": "https://www.tombihn.com/products/large-zip-shop-bag",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Honeydew 200 Halcyon",
+      "Cantaloupe 200 Halcyon",
+      "Acai 200 Halcyon",
+      "Cerise 200 Halcyon",
+      "Kelpie 200 Halcyon",
+      "Lemonade 200 Halcyon",
+      "Northwest Sky 200 Halcyon",
+      "Tahoma 200 Halcyon",
+      "Ultraviolet 200 Halcyon",
+      "Zest 200 Halcyon",
+      "Cobalt 210 Cerylon",
+      "Dusk 210 Cerylon",
+      "Moss 210 Cerylon",
+      "Mountain Grey 210 Cerylon",
+      "Persimmon 210 Cerylon",
+      "Sangria 210 Cerylon",
+      "Island 200 Halcyon",
+      "Kiwi 200 Halcyon",
+      "Selkie 200 Halcyon",
+      "Sitka 200 Halcyon",
+      "Tidal 200 Halcyon",
+      "Wisteria 200 Halcyon",
+      "Emerald 210 Cerylon"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": "zip",
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "48123706343613",
+        "size": null,
+        "color": "Honeydew 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "48123706704061",
+        "size": null,
+        "color": "Cantaloupe 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "43246884323517",
+        "size": null,
+        "color": "Acai 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44980623245501",
+        "size": null,
+        "color": "Cerise 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45304872632509",
+        "size": null,
+        "color": "Kelpie 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46364000878781",
+        "size": null,
+        "color": "Lemonade 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "43246886092989",
+        "size": null,
+        "color": "Northwest Sky 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45240706531517",
+        "size": null,
+        "color": "Tahoma 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46364000944317",
+        "size": null,
+        "color": "Ultraviolet 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "43246891434173",
+        "size": null,
+        "color": "Zest 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "43464871706813",
+        "size": null,
+        "color": "Cobalt 210 Cerylon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "43246847262909",
+        "size": null,
+        "color": "Dusk 210 Cerylon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "43246847656125",
+        "size": null,
+        "color": "Moss 210 Cerylon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "43464871608509",
+        "size": null,
+        "color": "Mountain Grey 210 Cerylon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44593651122365",
+        "size": null,
+        "color": "Persimmon 210 Cerylon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "43464873279677",
+        "size": null,
+        "color": "Sangria 210 Cerylon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "43246885372093",
+        "size": null,
+        "color": "Island 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44505715507389",
+        "size": null,
+        "color": "Kiwi 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "45304873320637",
+        "size": null,
+        "color": "Selkie 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44985954009277",
+        "size": null,
+        "color": "Sitka 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "44980135395517",
+        "size": null,
+        "color": "Tidal 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "43415379148989",
+        "size": null,
+        "color": "Wisteria 200 Halcyon",
+        "price": 105.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "47737018450109",
+        "size": null,
+        "color": "Emerald 210 Cerylon",
+        "price": 105.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "tombihn-pop-tote",
+    "modelKey": "tombihn-pop-tote",
+    "name": "Pop Tote",
+    "kind": "tote",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 120.0,
+    "currency": "USD",
+    "features": [
+      "ziptop",
+      "organizer"
+    ],
+    "featureEvidence": {
+      "ziptop": " The Pop Tote is a zip-top tote bag designed with distinctive snaps at the top. Whether you are ",
+      "organizer": "vel bag for you. Zip-top main compartment with flat bottom 4 snaps that pop (see what we did there?) open or sn"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "The Pop Tote is a zip-top tote bag designed with distinctive snaps at the top.",
+    "image": "/images/tombihn-pop-tote.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/files/marsred-1.jpg?v=1744391550",
+    "sourceUrl": "https://www.tombihn.com/products/pop-tote",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Aubergine Ballistic",
+      "Black Ballistic",
+      "Deep Blue Ballistic",
+      "Nebulous Grey Ballistic",
+      "Raspberry Ballistic"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": "zip",
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "13117001433151",
+        "size": null,
+        "color": "Aubergine Ballistic",
+        "price": 120.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "54905514951",
+        "size": null,
+        "color": "Black Ballistic",
+        "price": 120.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "54905515079",
+        "size": null,
+        "color": "Deep Blue Ballistic",
+        "price": 120.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "13117060153407",
+        "size": null,
+        "color": "Nebulous Grey Ballistic",
+        "price": 120.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "44475586150589",
+        "size": null,
+        "color": "Raspberry Ballistic",
+        "price": 120.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "tombihn-truckasana",
+    "modelKey": "tombihn-truckasana",
+    "name": "Truckasana",
+    "kind": "tote",
+    "brand": "TOM BIHN",
+    "merchant": "TOM BIHN",
+    "price": 100.0,
+    "currency": "USD",
+    "features": [],
+    "featureEvidence": {},
+    "editorialFeatures": [],
+    "description": "Our spies have informed us that some of you(we shan’t name names here) were shamelessly using our Truck tote as a yoga and gym bag.",
+    "image": "/images/tombihn-truckasana.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/products/Truckasana_Wild.jpg?v=1638368243",
+    "sourceUrl": "https://www.tombihn.com/products/truckasana",
+    "catalogSource": "https://www.tombihn.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Ursa Brown Ballistic/Ultraviolet 200 Halcyon",
+      "Wilderness Green Ballistic/Island 200 Halcyon",
+      "Black Ballistic/Taiga 200 Halcyon",
+      "Deep Blue Ballistic/Coyote 200 Halcyon"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "37516044533949",
+        "size": null,
+        "color": "Ursa Brown Ballistic/Ultraviolet 200 Halcyon",
+        "price": 100.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "37516051611837",
+        "size": null,
+        "color": "Wilderness Green Ballistic/Island 200 Halcyon",
+        "price": 100.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "37516040339645",
+        "size": null,
+        "color": "Black Ballistic/Taiga 200 Halcyon",
+        "price": 100.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "37516052529341",
+        "size": null,
+        "color": "Deep Blue Ballistic/Coyote 200 Halcyon",
+        "price": 100.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "dayowl-nocturnal-black-the-backpack",
+    "modelKey": "dayowl-nocturnal-black",
+    "name": "Backpack Pro",
+    "kind": "backpack",
+    "brand": "Day Owl",
+    "merchant": "Day Owl",
+    "price": 155.0,
+    "currency": "USD",
+    "features": [
+      "rain",
+      "laptop",
+      "minimal"
+    ],
+    "featureEvidence": {
+      "rain": "leeve Insulated Bottle Pocket Water Repellant Canvas Secret Phone Pocket Individually Numbered Magnetic Clasp Built",
+      "laptop": "mal and clean. It fits a 16in laptop in a padded external sleeve, the insulated neoprene sleeve fits a 32o",
+      "minimal": "onal while keeping the design minimal and clean. It fits a 16in laptop in a padded external sleeve, the ins"
+    },
+    "editorialFeatures": [
+      "minimal"
+    ],
+    "description": "The Backpack Pro is the perfect office mate/gym partner/wing...bag?",
+    "image": "/images/dayowl-nocturnal-black-the-backpack.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0267/1126/1232/products/DayOwlNov2_30047crx_handle_1000px_45_1_1.jpg?v=1644000634",
+    "sourceUrl": "https://www.dayowl.com/products/nocturnal-black-the-backpack",
+    "catalogSource": "https://www.dayowl.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Nocturnal Black"
+    ],
+    "weightGrams": 907,
+    "laptopInches": 16.0,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "39699877986352",
+        "size": null,
+        "color": "Nocturnal Black",
+        "price": 155.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "dayowl-midnight-navy-slim-backpack",
+    "modelKey": "dayowl-midnight-navy-slim-backpack",
+    "name": "Slim Pro",
+    "kind": "backpack",
+    "brand": "Day Owl",
+    "merchant": "Day Owl",
+    "price": 135.0,
+    "currency": "USD",
+    "features": [
+      "rain",
+      "laptop"
+    ],
+    "featureEvidence": {
+      "rain": " Laptop Sleeve Free Exchanges Water Repellant Canvas Individually Numbered Magnetic Clasp Built for Repairs Store C",
+      "laptop": "bag’s for you. It fits a 14in laptop, and the insulated neoprene sleeve fits a 32 oz water bottle (a narro"
+    },
+    "editorialFeatures": [],
+    "description": "The Slim Pro has every feature of the the Backpack Pro in a slightly lower volume and profile.",
+    "image": "/images/dayowl-midnight-navy-slim-backpack.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0267/1126/1232/files/BP_SL__0008_Hue_Saturation6copy10.jpg?v=1686589029",
+    "sourceUrl": "https://www.dayowl.com/products/midnight-navy-slim-backpack",
+    "catalogSource": "https://www.dayowl.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Midnight Navy"
+    ],
+    "weightGrams": 907,
+    "laptopInches": 14.0,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "backpack"
+    ],
+    "variants": [
+      {
+        "id": "39993621938224",
+        "size": null,
+        "color": "Midnight Navy",
+        "price": 135.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "dayowl-the-more-bag-nocturnal-black",
+    "modelKey": "dayowl-the-more-bag-nocturnal-black",
+    "name": "Packable Tote",
+    "kind": "tote",
+    "brand": "Day Owl",
+    "merchant": "Day Owl",
+    "price": 15.0,
+    "currency": "USD",
+    "features": [
+      "packable"
+    ],
+    "featureEvidence": {
+      "packable": "et, perfect for keys or phone Packable design folds flat into itself "
+    },
+    "editorialFeatures": [],
+    "description": "Whatever the day holds, pack it into The Reusable Bag.",
+    "image": "/images/dayowl-the-more-bag-nocturnal-black.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0267/1126/1232/products/nocblack.jpg?v=1679457150",
+    "sourceUrl": "https://www.dayowl.com/products/the-more-bag-nocturnal-black",
+    "catalogSource": "https://www.dayowl.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Nocturnal Black"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": 18.0,
+    "closure": null,
+    "carryingStyles": [
+      "shoulder"
+    ],
+    "variants": [
+      {
+        "id": "39880857583664",
+        "size": null,
+        "color": "Nocturnal Black",
+        "price": 15.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "dagne-noa-tote-onyx",
+    "modelKey": "dagne-noa-tote-onyx",
+    "name": "Noa Tote in Onyx",
+    "kind": "tote",
+    "brand": "Dagne Dover",
+    "merchant": "Dagne Dover",
+    "price": 210.0,
+    "currency": "USD",
+    "features": [
+      "rain",
+      "laptop",
+      "organizer",
+      "light"
+    ],
+    "featureEvidence": {
+      "rain": " line . Neoprene is naturally water-resistant and lightweight, and it holds its shape while staying sleek and sport",
+      "laptop": "through a packed agenda, this laptop tote bag has everything you need in exactly the right place. Narrower",
+      "organizer": "feel while retaining the same organizational DNA. The Work Tote Built for Your Whole Day Inside, a dedicate",
+      "light": "naturally water-resistant and lightweight, and it holds its shape while staying sleek and sporty. Looking for a"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "Noa Tote in Onyx (Black) Your days don't slow down, and your bag shouldn't either.",
+    "image": "/images/dagne-noa-tote-onyx.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0260/1439/files/365_Neoprene_Noa_NA_Onyx_Front_1copy_28b72e5b-9440-480e-9823-6b8eb2884855.jpg?v=1776957974",
+    "sourceUrl": "https://www.dagnedover.com/products/noa-tote-onyx",
+    "catalogSource": "https://www.dagnedover.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [],
+    "weightGrams": null,
+    "laptopInches": 16.0,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "shoulder"
+    ],
+    "variants": [
+      {
+        "id": "42702402650183",
+        "size": null,
+        "color": null,
+        "price": 210.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "dagne-allyn-tote-in-onyx-large",
+    "modelKey": "dagne-allyn-tote",
+    "name": "Allyn Tote in Onyx, Large",
+    "kind": "tote",
+    "brand": "Dagne Dover",
+    "merchant": "Dagne Dover",
+    "price": 425.0,
+    "currency": "USD",
+    "features": [
+      "laptop",
+      "organizer"
+    ],
+    "featureEvidence": {
+      "laptop": "tive way to carry. A neoprene laptop sleeve and bottle holder ensure your things are always protected, whi",
+      "organizer": "ed, while thoughtful interior pockets keep everything organized and ready to go. "
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "Meet the elevated upgrade to our signature tote.",
+    "image": "/images/dagne-allyn-tote-in-onyx-large.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0260/1439/files/dagne-2025-Leather_Allyn_Onyx_L_FrontHandlesUp.jpg?v=1748963578",
+    "sourceUrl": "https://www.dagnedover.com/products/allyn-tote-in-onyx-large",
+    "catalogSource": "https://www.dagnedover.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": "magnetic",
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "42704402907207",
+        "size": null,
+        "color": null,
+        "price": 425.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "dagne-super-soft-large-tote-onyx",
+    "modelKey": "dagne-super-soft-large-tote-onyx",
+    "name": "Super Soft Large Tote in Onyx",
+    "kind": "tote",
+    "brand": "Dagne Dover",
+    "merchant": "Dagne Dover",
+    "price": 155.0,
+    "currency": "USD",
+    "features": [
+      "packable",
+      "easyclean",
+      "minimal",
+      "light"
+    ],
+    "featureEvidence": {
+      "packable": "me, while folding down into a packable large tote bag with a zipper that tucks flat into a suitcase corner u",
+      "easyclean": "uper Soft Nylon poly blend is machine washable with a mild detergent in cold water. Reshape while damp and lay f",
+      "minimal": "the bag adjusts from slim and streamlined to full-on weekend-mode. And because the whole thing packs into its o",
+      "light": "or pouch, it’s just as much a lightweight packable tote bag for your carry-on as it is a stand-alone bag for gr"
+    },
+    "editorialFeatures": [
+      "easyclean",
+      "minimal"
+    ],
+    "description": "Meet the Super Soft Large Tote in Black Some bags ask you to choose between “big enough” and “easy to carry.” The Super Soft Large Tote doesn’t make you pick.",
+    "image": "/images/dagne-super-soft-large-tote-onyx.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0260/1439/files/SuperSoft_Nylon_LargeTote_L_Onyx_Front_2_084c9801-c9fa-4d38-b434-602a8028342e.jpg?v=1789506887",
+    "sourceUrl": "https://www.dagnedover.com/products/super-soft-large-tote-onyx",
+    "catalogSource": "https://www.dagnedover.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": 44.0,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "43157914386503",
+        "size": null,
+        "color": null,
+        "price": 155.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "dagne-wade-diaper-tote-in-onyx",
+    "modelKey": "dagne-wade-diaper-tote",
+    "name": "Wade Diaper Tote in Onyx",
+    "kind": "tote",
+    "brand": "Dagne Dover",
+    "merchant": "Dagne Dover",
+    "price": 250.0,
+    "currency": "USD",
+    "features": [
+      "organizer"
+    ],
+    "featureEvidence": {
+      "organizer": "ring everything they can with pockets for wipes, bottles, and lovies, and whatever else their new bundle of"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "The Large Wade is great for parents of newborns who cant leave the house without bringing everything with them.",
+    "image": "/images/dagne-wade-diaper-tote-in-onyx.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0260/1439/files/dagne-2025-Baby_Wade_Onyx_frontstrap-2048x2048-12d1e705-b941-4465-bf20-1a93a5093c3d.jpg?v=1749578900",
+    "sourceUrl": "https://www.dagnedover.com/products/wade-diaper-tote-in-onyx",
+    "catalogSource": "https://www.dagnedover.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "41996718899271",
+        "size": null,
+        "color": null,
+        "price": 250.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "able-mamuye-classic-tote",
+    "modelKey": "able-mamuye-classic-tote",
+    "name": "Mamuye Classic Tote",
+    "kind": "tote",
+    "brand": "ABLE",
+    "merchant": "ABLE",
+    "price": 228.0,
+    "currency": "USD",
+    "features": [
+      "laptop"
+    ],
+    "featureEvidence": {
+      "laptop": "-off to dinner, it fits a 16\" laptop and your daily essentials, with comfortable shoulder straps you’ll re"
+    },
+    "editorialFeatures": [],
+    "description": "Made to move with you from work to gym, drop-off to dinner, it fits a 16\" laptop and your daily essentials, with comfortable shoulder straps you’ll reach for again and again.",
+    "image": "/images/able-mamuye-classic-tote.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1136/2606/files/Mamuye-Tote-Mushroom-Front-Product-ABLE.png?v=1790865915",
+    "sourceUrl": "https://www.ableclothing.com/products/mamuye-classic-tote",
+    "catalogSource": "https://www.ableclothing.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "OS"
+    ],
+    "colors": [
+      "Mushroom",
+      "Bourbon",
+      "Camel",
+      "Pebbled Black",
+      "Juniper"
+    ],
+    "weightGrams": null,
+    "laptopInches": 16.0,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [
+      "shoulder"
+    ],
+    "variants": [
+      {
+        "id": "49660463743166",
+        "size": "OS",
+        "color": "Mushroom",
+        "price": 228.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "49660463775934",
+        "size": "OS",
+        "color": "Mushroom",
+        "price": 238.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "49202813862078",
+        "size": "OS",
+        "color": "Bourbon",
+        "price": 228.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "49202813894846",
+        "size": "OS",
+        "color": "Bourbon",
+        "price": 238.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "49202813927614",
+        "size": "OS",
+        "color": "Camel",
+        "price": 228.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "49202813960382",
+        "size": "OS",
+        "color": "Camel",
+        "price": 238.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "46363071774910",
+        "size": "OS",
+        "color": "Pebbled Black",
+        "price": 228.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "49155593404606",
+        "size": "OS",
+        "color": "Pebbled Black",
+        "price": 238.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "49065503031486",
+        "size": "OS",
+        "color": "Juniper",
+        "price": 228.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "49155593633982",
+        "size": "OS",
+        "color": "Juniper",
+        "price": 238.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "able-selam-tote",
+    "modelKey": "able-selam-tote",
+    "name": "Selam Tote",
+    "kind": "tote",
+    "brand": "ABLE",
+    "merchant": "ABLE",
+    "price": 250.0,
+    "currency": "USD",
+    "features": [
+      "laptop",
+      "organizer"
+    ],
+    "featureEvidence": {
+      "laptop": "el, and every day. Room for a laptop, water bottle, notebook, and essentials, with two deep exterior pocke",
+      "organizer": "tials, with two deep exterior pockets for your phone, keys, and sunglasses. Handcrafted in premium pull-up "
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "A best-selling leather tote made for work, travel, and every day.",
+    "image": "/images/able-selam-tote.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1136/2606/files/SelamTote-Black-Product-Able-2026.png?v=1793304164",
+    "sourceUrl": "https://www.ableclothing.com/products/selam-tote",
+    "catalogSource": "https://www.ableclothing.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "OS"
+    ],
+    "colors": [
+      "Black",
+      "Whiskey"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "12492918325328",
+        "size": "OS",
+        "color": "Black",
+        "price": 250.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "48878394048702",
+        "size": "OS",
+        "color": "Black",
+        "price": 260.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "28813008732240",
+        "size": "OS",
+        "color": "Whiskey",
+        "price": 250.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "48878394081470",
+        "size": "OS",
+        "color": "Whiskey",
+        "price": 260.0,
+        "availableAtCapture": false
+      }
+    ]
+  },
+  {
+    "id": "caraa-studio-tote-leather-large",
+    "modelKey": "caraa-studio-tote-leather-large",
+    "name": "Studio Tote",
+    "kind": "tote",
+    "brand": "Caraa",
+    "merchant": "Caraa",
+    "price": 380.0,
+    "currency": "USD",
+    "features": [
+      "organizer"
+    ],
+    "featureEvidence": {
+      "organizer": " bottle holder, separate shoe compartment, and quick-access tablet pocket. From office days to travel days, it "
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "Crafted from buttery leather, the Studio Tote transitions from tote to backpack with ease — sleek, smart, and built for whatever the day brings.",
+    "image": "/images/caraa-studio-tote-leather-large.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1986/1127/files/1_ad1d7a80-1ea8-40de-a87d-019145b380cb.jpg?v=1730827344",
+    "sourceUrl": "https://caraa.co/products/studio-tote-leather-large",
+    "catalogSource": "https://caraa.co/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "in Black"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "31720960163920",
+        "size": null,
+        "color": "in Black",
+        "price": 380.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "caraa-gym-tote-baby-blue",
+    "modelKey": "caraa-gym-tote-baby-blue",
+    "name": "Gym Tote",
+    "kind": "tote",
+    "brand": "Caraa",
+    "merchant": "Caraa",
+    "price": 170.0,
+    "currency": "USD",
+    "features": [
+      "rain"
+    ],
+    "featureEvidence": {
+      "rain": "eeve and a quick-grab pocket. Water-repellent and silver-infused antimicrobial lining. "
+    },
+    "editorialFeatures": [],
+    "description": "A sleek pastel gym tote to elevate your workout routine.",
+    "image": "/images/caraa-gym-tote-baby-blue.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1986/1127/files/tote_0015_gymtoteblue1.jpg?v=1788962955",
+    "sourceUrl": "https://caraa.co/products/gym-tote-baby-blue",
+    "catalogSource": "https://caraa.co/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "in Baby Blue"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "42938481115216",
+        "size": null,
+        "color": "in Baby Blue",
+        "price": 170.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "loandsons-catalina-deluxe-tote-600d-recycled-poly-onyx",
+    "modelKey": "loandsons-catalina-deluxe-tote-600d-recycled-poly-onyx",
+    "name": "Catalina Deluxe Tote - 600D Recycled Poly - Black",
+    "kind": "tote",
+    "brand": "Lo & Sons",
+    "merchant": "Lo & Sons",
+    "price": 100.8,
+    "currency": "USD",
+    "features": [
+      "organizer"
+    ],
+    "featureEvidence": {
+      "organizer": "to popularize the bottom shoe compartment design. Available in eco-friendly sustainable materials. Extremely ve"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "The Catalina Deluxe Tote is a smaller tote edition of the original weekender bag to popularize the bottom shoe compartment design.",
+    "image": "/images/loandsons-catalina-deluxe-tote-600d-recycled-poly-onyx.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/2185/1497/products/CATALINA-DELUXE-TOTE-600d-recycled-poly-onyx-black-dark-grey-FRONT-weekender-lo-and-sons_9731ffdf-a862-429e-9991-1b4dc5024de3.jpg?v=1774552281",
+    "sourceUrl": "https://www.loandsons.com/products/catalina-deluxe-tote-600d-recycled-poly-onyx",
+    "catalogSource": "https://www.loandsons.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [],
+    "colors": [
+      "Onyx - 600D Recycled Poly"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "39289456132192",
+        "size": null,
+        "color": "Onyx - 600D Recycled Poly",
+        "price": 100.8,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "taylor-alta-jacket-in-montana-plaid-fleece-2610",
+    "modelKey": "taylor-alta-jacket",
+    "name": "The Alta Jacket in Montana Plaid Fleece",
+    "kind": "jacket",
+    "brand": "Taylor Stitch",
+    "merchant": "Taylor Stitch",
+    "price": 218.0,
+    "currency": "USD",
+    "features": [
+      "organizer",
+      "easyclean"
+    ],
+    "featureEvidence": {
+      "organizer": "et detailing. Two lower patch pockets. Encased elastic at sleeve opening. Stand collar. Two way separating ",
+      "easyclean": "wo way separating YKK zipper. Wash cold and tumble dry low. Made in China. "
+    },
+    "editorialFeatures": [
+      "organizer",
+      "easyclean"
+    ],
+    "description": "The Alta Jacket in Montana Plaid Fleece from Taylor Stitch 16-oz.",
+    "image": "/images/taylor-alta-jacket-in-montana-plaid-fleece-2610.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_The_Alta_Jacket_in_Montana_Plaid_Fleece_PDP_001.jpg?v=1791566573",
+    "sourceUrl": "https://www.taylorstitch.com/products/alta-jacket-in-montana-plaid-fleece-2610",
+    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "42836031012941",
+        "size": "XS",
+        "color": null,
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42836031045709",
+        "size": "S",
+        "color": null,
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42836031078477",
+        "size": "M",
+        "color": null,
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42836031111245",
+        "size": "L",
+        "color": null,
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42836031144013",
+        "size": "XL",
+        "color": null,
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42836031176781",
+        "size": "XXL",
+        "color": null,
+        "price": 218.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "taylor-drover-jacket-in-bourbon-suede-2611",
+    "modelKey": "taylor-drover-jacket",
+    "name": "The Drover Jacket in Bourbon Suede",
+    "kind": "jacket",
+    "brand": "Taylor Stitch",
+    "merchant": "Taylor Stitch",
+    "price": 798.0,
+    "currency": "USD",
+    "features": [
+      "organizer"
+    ],
+    "featureEvidence": {
+      "organizer": "st pocket and two lower patch pockets with button flap closure. Back tabs with metal ladder buckle for wais"
+    },
+    "editorialFeatures": [
+      "organizer"
+    ],
+    "description": "The Drover Jacket in Bourbon Suede from Taylor Stitch Goat suede.",
+    "image": "/images/taylor-drover-jacket-in-bourbon-suede-2611.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_TheDroverJacketinBourbonSuede_PDP_001.jpg?v=1791836692",
+    "sourceUrl": "https://www.taylorstitch.com/products/drover-jacket-in-bourbon-suede-2611",
+    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "42836043464781",
+        "size": "XS",
+        "color": null,
+        "price": 798.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42836043497549",
+        "size": "S",
+        "color": null,
+        "price": 798.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42836043530317",
+        "size": "M",
+        "color": null,
+        "price": 798.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42836043563085",
+        "size": "L",
+        "color": null,
+        "price": 798.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42836043595853",
+        "size": "XL",
+        "color": null,
+        "price": 798.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42836043628621",
+        "size": "XXL",
+        "color": null,
+        "price": 798.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "taylor-long-haul-jacket-in-soil-slub-denim-2607",
+    "modelKey": "taylor-long-haul-jacket",
+    "name": "The Long Haul Jacket in Soil Slub Denim",
+    "kind": "jacket",
+    "brand": "Taylor Stitch",
+    "merchant": "Taylor Stitch",
+    "price": 228.0,
+    "currency": "USD",
+    "features": [
+      "organizer",
+      "easyclean"
+    ],
+    "featureEvidence": {
+      "organizer": "feel. Two rounded patch chest pockets. Left pocket features a pen sleeve. Front welt hand-warmer pockets. T",
+      "easyclean": "ivets to last you a lifetime. Wash cold and tumble dry low. Made in Vietnam. "
+    },
+    "editorialFeatures": [
+      "organizer",
+      "easyclean"
+    ],
+    "description": "The Long Haul Jacket in Soil Slub Denim from Taylor Stitch 11.75-oz.",
+    "image": "/images/taylor-long-haul-jacket-in-soil-slub-denim-2607.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/long-haul-jacket-in-soil-slub-denim-2607_001.jpg?v=1790611791",
+    "sourceUrl": "https://www.taylorstitch.com/products/long-haul-jacket-in-soil-slub-denim-2607",
+    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "42507564974157",
+        "size": "XS",
+        "color": null,
+        "price": 228.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507565006925",
+        "size": "S",
+        "color": null,
+        "price": 228.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507565039693",
+        "size": "M",
+        "color": null,
+        "price": 228.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507565072461",
+        "size": "L",
+        "color": null,
+        "price": 228.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507565105229",
+        "size": "XL",
+        "color": null,
+        "price": 228.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507565137997",
+        "size": "XXL",
+        "color": null,
+        "price": 228.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "taylor-ryder-jacket-in-rinsed-black-organic-selvedge-2608",
+    "modelKey": "taylor-ryder-jacket",
+    "name": "The Ryder Jacket in Rinsed Black Organic Selvedge",
+    "kind": "jacket",
+    "brand": "Taylor Stitch",
+    "merchant": "Taylor Stitch",
+    "price": 238.0,
+    "currency": "USD",
+    "features": [
+      "organizer",
+      "easyclean"
+    ],
+    "featureEvidence": {
+      "organizer": "leated front. Two lower patch pockets feature top and side entry. Zig-zag reinforcement stitching on under ",
+      "easyclean": "oughout. Tack button closure. Wash cold and tumble dry low. Made in Vietnam. "
+    },
+    "editorialFeatures": [
+      "organizer",
+      "easyclean"
+    ],
+    "description": "The Ryder Jacket in Rinsed Black Organic Selvedge from Taylor Stitch 13.5-oz.",
+    "image": "/images/taylor-ryder-jacket-in-rinsed-black-organic-selvedge-2608.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/ryder-jacket-in-rinsed-black-organic-selvedge-2608_001.jpg?v=1790612079",
+    "sourceUrl": "https://www.taylorstitch.com/products/ryder-jacket-in-rinsed-black-organic-selvedge-2608",
+    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "42507572346957",
+        "size": "XS",
+        "color": null,
+        "price": 238.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507572379725",
+        "size": "S",
+        "color": null,
+        "price": 238.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507572412493",
+        "size": "M",
+        "color": null,
+        "price": 238.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507572445261",
+        "size": "L",
+        "color": null,
+        "price": 238.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507572478029",
+        "size": "XL",
+        "color": null,
+        "price": 238.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507572510797",
+        "size": "XXL",
+        "color": null,
+        "price": 238.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "taylor-clark-bomber-in-smoked-olive-moleskin-2608",
+    "modelKey": "taylor-clark-bomber",
+    "name": "The Clark Bomber in Smoked Olive Moleskin",
+    "kind": "jacket",
+    "brand": "Taylor Stitch",
+    "merchant": "Taylor Stitch",
+    "price": 248.0,
+    "currency": "USD",
+    "features": [
+      "organizer",
+      "easyclean"
+    ],
+    "featureEvidence": {
+      "organizer": "lower double welt hand warmer pockets. Real horn buttons. Wash cold and tumble dry low. Made in China. ",
+      "easyclean": "r pockets. Real horn buttons. Wash cold and tumble dry low. Made in China. "
+    },
+    "editorialFeatures": [
+      "organizer",
+      "easyclean"
+    ],
+    "description": "The Clark Bomber in Smoked Olive Moleskin from Taylor Stitch 14.5-oz.",
+    "image": "/images/taylor-clark-bomber-in-smoked-olive-moleskin-2608.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/clark-bomber-in-smoked-olive-moleskin-2608_001.jpg?v=1790611225",
+    "sourceUrl": "https://www.taylorstitch.com/products/clark-bomber-in-smoked-olive-moleskin-2608",
+    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": null,
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "42507572772941",
+        "size": "XS",
+        "color": null,
+        "price": 248.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42507572805709",
+        "size": "S",
+        "color": null,
+        "price": 248.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507572838477",
+        "size": "M",
+        "color": null,
+        "price": 248.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507572871245",
+        "size": "L",
+        "color": null,
+        "price": 248.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507572904013",
+        "size": "XL",
+        "color": null,
+        "price": 248.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507572936781",
+        "size": "XXL",
+        "color": null,
+        "price": 248.0,
+        "availableAtCapture": true
+      }
+    ]
+  },
+  {
+    "id": "taylor-hatteras-anorak-in-fatigue-olive-dry-wax-canvas-2609",
+    "modelKey": "taylor-hatteras-anorak",
+    "name": "The Hatteras Anorak in Fatigue Olive Dry Wax Canvas",
+    "kind": "jacket",
+    "brand": "Taylor Stitch",
+    "merchant": "Taylor Stitch",
+    "price": 173.6,
+    "currency": "USD",
+    "features": [
+      "ziptop"
+    ],
+    "featureEvidence": {
+      "ziptop": "uble needle topstitching. YKK zipper closure with fireman clasp storm flap. Spot clean only. Made in China. "
+    },
+    "editorialFeatures": [],
+    "description": "The Hatteras Anorak in Fatigue Olive Dry Wax Canvas from Taylor Stitch 11.5-oz.",
+    "image": "/images/taylor-hatteras-anorak-in-fatigue-olive-dry-wax-canvas-2609.jpg",
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/hatteras-anorak-in-fatigue-olive-dry-wax-canvas-2609_001_951fb760-f52a-459c-99e8-893575781358.jpg?v=1790616815",
+    "sourceUrl": "https://www.taylorstitch.com/products/hatteras-anorak-in-fatigue-olive-dry-wax-canvas-2609",
+    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL"
+    ],
+    "colors": [],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "closure": "zip",
+    "carryingStyles": [],
+    "variants": [
+      {
+        "id": "42507580473421",
+        "size": "XS",
+        "color": null,
+        "price": 173.6,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42507580506189",
+        "size": "S",
+        "color": null,
+        "price": 173.6,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42507580538957",
+        "size": "M",
+        "color": null,
+        "price": 173.6,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507580571725",
+        "size": "L",
+        "color": null,
+        "price": 173.6,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507580604493",
+        "size": "XL",
+        "color": null,
+        "price": 173.6,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42507580637261",
+        "size": "XXL",
+        "color": null,
+        "price": 173.6,
+        "availableAtCapture": false
+      }
+    ]
   }
 ];

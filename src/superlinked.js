@@ -2,7 +2,7 @@ import {vendorJson,serverBase,IntegrationError} from './vendor-http.js';
 export class SuperlinkedRanker{
  constructor({env=process.env,fetchImpl=fetch}={}){this.env=env;this.fetch=fetchImpl;}
  async rank(products,context,intent={}){
-  if(!this.env.SUPERLINKED_API_KEY)throw new IntegrationError('Connect Superlinked in Vercel before starting personalized search.');
+  if(!this.env.SUPERLINKED_API_KEY)throw new IntegrationError('Connect Superlinked in Settings to continue.');
   if(!products.length)return [];
   const base=serverBase(this.env.SUPERLINKED_BASE_URL||'https://api.superlinked.com','SUPERLINKED_BASE_URL');const model=this.env.SUPERLINKED_MODEL||'Qwen/Qwen3-Reranker-0.6B';
   const query=JSON.stringify({request:context.query,profile:context.profile,weather:context.weather,memories:context.memories.map(m=>({id:m.id,type:m.type,text:m.text,source:m.source})),constraints:intent.constraints||context.constraints,preferences:intent.preferredFeatures||[],instruction:'Prefer requested attributes and relevant personal context. Explicit user requirements override inferred preferences.'});

@@ -1,136 +1,103 @@
 # Known
 
-Two personal shopping demos using real merchant products and live agent/reranking integrations:
+Personal shopping that learns from your corrections. The app works without API keys and includes 60 real merchant products, reactive filters, reviewed personal learning, and optional live connections.
 
-- `/demo/maya` — Seattle city commuter and conference presenter.
-- `/demo/jordan` — Austin parent and everyday organizer.
-- `/` — demo chooser.
+## Run
 
-Both start with **“Find me a backpack.”** Candidate selection and final ranking come from service calls, not a predetermined result order.
-
-## Start locally
-
-Requires Node 22.9+; no package installation is needed.
+Requires Node 22.9+; there are no package dependencies.
 
 ```sh
 cd /Users/dayeon/Repository/shopping
-cp .env.example .env
-# Set a selected agent key and SUPERLINKED_API_KEY in .env.
 npm start
 ```
 
-Open http://127.0.0.1:4317. `npm run dev` restarts the local server when files change. `npm test` runs offline regression tests; `npm run build` produces the static client in `dist/`.
+Open http://127.0.0.1:4317 and choose a profile. `/demo/maya` and `/demo/jordan` remain shareable links; `/profiles/maya` and `/profiles/jordan` are aliases. `npm run dev` watches the server. `npm test` runs offline tests, and `npm run build` produces the client in `dist/`.
 
-## Vercel setup
+## Four ready shopping cases
 
-Import `daynkng/shopping`, using the repository root. `vercel.json` selects Other, runs `npm run build`, serves `dist/`, and routes both demo pages to the app. Root `api/` handlers deploy as Vercel Functions. Do not rewrite `/api/*` to HTML or deploy only `public/`.
+1. Maya’s commuter backpack — Seattle, a bike commute, a 16-inch laptop, minimal styling, and a rainy weather scenario.
+2. Jordan’s family backpack — Austin, school/work driving, organization, bottles, snacks, and a warmer weather scenario.
+3. Maya’s work tote — laptop-aware office carrying, closure, useful organization, and style.
+4. Maya’s conference jacket — presentation styling, carry-on travel, packability, and weather considerations.
 
-Set server-side environment variables in Vercel, then redeploy:
+On first use each example runs the built-in engine and displays eight ranked products from at least eight eligible candidates. The same catalog produces different personalization from the two profiles; rankings are computed, not hardcoded product orders. Users can create more threads or delete threads with Undo. Deleting a thread preserves cart items, saved learning, and activity.
 
-| Integration | Variables | Purpose |
-|---|---|---|
-| OpenAI | `OPENAI_API_KEY`, `OPENAI_MODEL` | Responses API, structured catalog selection |
-| Claude | `ANTHROPIC_API_KEY`, `CLAUDE_MODEL` | Messages API, structured catalog selection |
-| Grok | `XAI_API_KEY`, `GROK_MODEL` | Native chat API, structured catalog selection |
-| Superlinked | `SUPERLINKED_API_KEY`, `SUPERLINKED_BASE_URL`, `SUPERLINKED_MODEL` | Hosted SIE scoring API; required for personalized results |
-| Context | `CONTEXT_SOURCE=sample` or `cognee` | Explicit personal-context source |
-| Cognee | `COGNEE_API_KEY`, `COGNEE_BASE_URL`, `COGNEE_MAYA_DATASET_ID`, `COGNEE_JORDAN_DATASET_ID` | Optional Cognee Cloud retrieval and preference saving |
+**Built-in shopping is the default and needs no credentials.** It is a deterministic catalog engine, not an external language model. It supports requests and follow-ups about budget, cheaper options, known weights, laptop dimensions, color, weather resistance, jacket size, formal styling, zip-top closure, and references such as “alternatives to the first one.” Unsupported requests ask a short clarification. Connected providers are selected explicitly in Settings and never silently replace or fall back to the built-in engine.
 
-Model defaults are in `.env.example`; choose models actually enabled in your vendor accounts. Superlinked’s default base URL is `https://api.superlinked.com`; the default reranker is `Qwen/Qwen3-Reranker-0.6B`. Use the current hosted model catalog to select another supported scoring model if needed.
+## Reactive filters and correction loop
 
-Open Settings to select an agent and test all five integrations. “Configured” means credentials are present, not that a call has succeeded. Test connection makes a small real request; a successful result shows its check time. Cognee is optional with sample context and required when `CONTEXT_SOURCE=cognee`. Failed required services stop personalized search. No local ranking or automatic provider substitution is used.
+Filter chips and budget/size controls refresh the latest product set in place, without an Apply button or another full chat exchange. Budget changes are debounced. Request sequencing ignores stale replies when filters change quickly. Failures label the visible products as previous results.
 
-API keys are never returned to the browser or copied into the static build. Configurable service URLs are server environment variables, not client request fields. This is a public demo of fictional personas, not a private-account system. Set project spend and traffic limits appropriate for your deployment before sharing a paid endpoint broadly.
+User requirements and inferred filters carry separate provenance. Maya initially receives `✧ AI suggested · Water-resistant only`, inferred from the rainy cycling context. Remove it to expand the candidate set; it stays suppressed through that thread’s follow-ups. Selecting “Don’t auto-apply this in future searches” saves a profile-specific persistent correction. Explicitly adding rain protection overrides that suppression for the current request/thread. Jordan’s policy state is independent.
 
-## Detailed demo context
+The rainy-commute memory is never deleted. It can still influence soft ranking. The same suppression policy is included before connected-agent discovery and enforced after output validation. No hidden budget is applied. Unknown measurements cannot satisfy hard requirements. Waterproof and water-resistant are distinct attributes.
 
-These profiles, memories, events, and weather conditions are fictional demonstration data. Weather is a **dated sample scenario, not a forecast**.
+## Reviewed learning and Cognee feedback
 
-| | Maya | Jordan |
-|---|---|---|
-| Home | Seattle, Washington | Austin, Texas |
-| Routine | Design lead; bikes with a 16-inch laptop | Parent of two; drives between school, work, and family activities |
-| Weather scenario | Dec 4, 2026: 46°F / 8°C, rain and cool wind | Dec 8, 2026: 75°F / 24°C, mostly dry with warm afternoons |
-| Preferences | Minimal styling, dark colors, protected electronics | Practical compartments, washable materials, family capacity |
-| Ownership | Replacing a broken commuter bag; already owns a bulky hiking pack | Small daypack cannot hold snacks, bottles, and family essentials |
-| Event | Presentation at Design Forward; carry-on travel | Education Summit with school visits and outdoor breaks |
-| Backpack signals | Laptop protection, rain resistance, compact commuting design | Organization, capacity, bottle storage, practicality |
-| Jacket signals | Presentation style, weather protection, packability | Lighter layers, washability, indoor/outdoor comfort |
+After an exchange, explicit personal statements can produce a **Remember this?** card with Save/Dismiss. Examples:
 
-Context produces **soft signals**, not automatic hard requirements. Explicit shopping requests take precedence. No hidden budget is applied. Product characteristics must be supported by the sourced catalog; unknown weights and dimensions stay unknown. Sample dates are scenario dates and do not refresh themselves to appear current.
+- “I prefer zip-top work totes” → a proposed preference.
+- “I already have a hiking pack” → a proposed ownership record.
+- An explicit dated personal event → a proposed event.
+- Rejecting an automatic filter → a policy correction, not deletion of the original preference.
 
-My Context separates the home profile and situational weather from preference and event memories. Ownership remains available inside the scoped search context. Only a retrieved `preference` record can be added to Preferences; events, weather and ownership cannot be converted. Sample preference choices save to browser storage. In Cognee mode, saving writes through Cognee and reports accepted/indexing state.
+“Under $100 for this purchase” stays thread-only. Whole conversations are not uploaded as memories. Proposed records preserve original wording, profile, thread/message references, type, and capture time. Saving validates approval and ownership, immediately updates local context, and changes future built-in rankings. Dismissed suggestions are not learned.
 
-## Connect Cognee Cloud
+With a connected Cognee session, Save writes the approved record to that profile’s configured dataset and requests indexing. The app reports “Saved to Cognee · Indexing” only after both requests are accepted. Without a connection, it reports “Saved locally.” Approved local memories expose Sync to Cognee after connecting. Write failures keep the local record and permit retries. Stable IDs, filenames and timestamps avoid duplicate retry writes. Indexing is asynchronous; accepted ingestion does not mean indexing has completed.
 
-Sample context works without Cognee credentials. To use the real connection:
+Home location and dated weather scenarios appear only in My Context. They remain separate from preferences and calendar events. Source records and the scoped context can be inspected through product evidence and audit details.
 
-1. Create a Cognee Cloud key. Copy your **tenant API URL** from its API Keys page into `COGNEE_BASE_URL`; do not use the dashboard URL.
-2. Set `COGNEE_API_KEY` and `COGNEE_BASE_URL` in local `.env`.
-3. Run `npm run setup:cognee`. The script creates or reuses separate `known-demo-maya` and `known-demo-jordan` datasets, ingests typed records, starts graph indexing, and verifies source-backed retrieval. An optional `COGNEE_DATASET_PREFIX` changes the dataset names.
-4. Copy the two returned dataset IDs into Vercel and set `CONTEXT_SOURCE=cognee`. Redeploy and test Cognee for each persona.
+## In-app connections
 
-The setup script uses stable per-record filenames and identical record bodies, making repeated ingestion safe with Cognee’s identical-content handling. Existing explicit dataset IDs are reused. No dataset deletion is performed. Initial indexing may take longer than the script’s three-minute verification window; re-run after indexing completes.
+Settings provides Connect/Reconnect/Disconnect for OpenAI, Claude, Grok, Cognee and Superlinked. Agent forms accept an API key/model. Superlinked accepts its key/model. Cognee accepts the official tenant API URL and separate Maya/Jordan dataset UUIDs. Connection creation validates a real request before writing credentials or reporting Connected; Cognee validates retrieval for both datasets. A failed reconnect leaves the previous credential cookie unchanged. Forms clear key fields after submission, and no endpoint returns the keys.
 
-The adapter calls Cognee’s native CHUNKS search scoped to the server-mapped dataset. Ingested JSON records retain IDs, owner, type, source, capture date, authorization, tags, and typed profile/weather data in a `KNOWN_RECORD:` envelope. The adapter extracts records from returned passage content and rejects untraceable prose, cross-persona records, and missing provenance. Both profile and weather records must be retrievable before that persona can search in Cognee mode. Two personas cannot share one configured dataset ID.
+A selected connected agent uses the native provider API and Superlinked hosted reranking; required-service failures are explicit. Built-in shopping remains selectable. Cognee connection is separate from selecting it as the personal-context source and can supply context to either engine. Server-managed credentials remain available through “Use workspace connection.” Explicit session disconnection masks server-managed credentials rather than silently reverting to them.
 
-Saving a retrieved preference ingests a stable saved record and requests indexing. “Saved to Cognee; indexing” means ingestion and the indexing request were accepted, not that indexing has completed. There is no sample-data fallback when Cognee is selected and unavailable.
+Credentials are encrypted/authenticated using AES-256-GCM in per-integration HttpOnly, SameSite=Strict session cookies. Deployed cookies are Secure; sessions have an enforced 12-hour maximum and no persistent cookie Max-Age. Authentication binds the integration ID, and tampered/expired cookies require reconnection. Browser shopping storage, analytics, URLs and response JSON do not contain credentials. Official provider hosts are fixed; user-entered Cognee URLs are limited to HTTPS tenant hosts under `.aws.cognee.ai`. Custom service hosts remain operator-managed.
 
-## Search architecture
+## Operator deployment setup
 
-```mermaid
-flowchart TD
-  Request[Request / follow-up + thread constraints] --> Source[Selected personal context source]
-  Source --> Sample[SampleContextAdapter]
-  Source --> Cognee[Cognee Cloud dataset retrieval]
-  Sample --> Context[Scoped city + weather + typed memory + provenance]
-  Cognee --> Context
-  Context --> Agent[Selected OpenAI / Claude / Grok adapter]
-  Catalog[24 sourced real products] --> Agent
-  Agent --> Eligibility[Validate catalog IDs, variants and hard constraints]
-  Eligibility --> Ranking[Superlinked hosted reranking API]
-  Context --> Ranking
-  Ranking --> Results[Chat results + evidence + audit]
-```
+Import `daynkng/shopping` into Vercel using the repository root. `vercel.json` serves `dist/` and deploys the root `api/` functions. Do not rewrite API requests to HTML. Follow-ups use the stateless backend even in built-in mode; no external service is called in the default sample-context path.
 
-Discovery and reranking receive the same unchanged context object. Interpreted constraints and preferred features remain separate and are recorded in the audit. Superlinked receives only eligible product documents, plus the scoped location, weather, memories, and user intent in its scoring query. Its raw finite scores determine final order; they are not probabilities or invented numerical feature contributions. Supporting memory/product matches are displayed as separate evidence. No scoring request is needed when there are no eligible products.
-
-Recent conversation and previous displayed IDs let agents resolve “the first one” and preserve constraints through follow-ups. Ambiguous references return a short clarification without fabricated results. Filters appear after results and run the same service-backed pipeline. Failed filter searches restore the preceding constraints.
-
-## Two-demo walkthrough
-
-1. Open the chooser and pick Maya or Jordan. Review the city, routine, and weather scenario, then select **Start demo**.
-2. Inspect context and sources on the product results. Switch between the two shareable URLs to compare the same initial request across different contexts.
-3. Try “under $150,” “lighter but still fits my 16-inch laptop,” “only black,” “alternatives to the first one,” or “remove the budget.”
-4. Start the conference-jacket suggestion. Try “something more formal” for Maya or “lighter and washable” for Jordan.
-5. Search My Context, inspect provenance, and add a retrieved preference.
-6. Add a product to cart and review either checkout path. Confirmation explicitly creates a **simulated receipt** only.
-
-Reset demo in Settings clears only that persona’s conversation and cart. Preferences and Cognee datasets are preserved. State uses `known-demo-v3` in this browser; each persona is isolated. The previous v2 state is kept for recovery while its cached rankings are invalidated during migration. No cross-device thread synchronization is included.
-
-## Product facts and checkout
-
-The 12 backpacks and 12 jackets are real Aer, Topo Designs, Taylor Stitch, and Outdoor Research products captured on November 20, 2026. Photos are bundled locally, with original photo URLs retained in `src/catalog.js`. See `CATALOG_SOURCES.md` for individual merchant links and source dates.
-
-Prices and availability are **catalog snapshots**. A real agent or ranking connection does not make inventory current. Exact variant selection uses recorded size/color/price evidence; merchant pages confirm final availability and price. Editorial style/organization labels are identified separately from merchant measurements. No live inventory check, merchant order, or payment is executed by checkout. Both manual and agent-assisted confirmation create local simulated receipts only.
-
-## Interfaces and verification
-
-- `GET /api/config`: integration configuration flags and the selected context source; no secrets.
-- `POST /api/connection-test`: integration ID and persona; returns actual test outcome and timestamp.
-- `POST /api/context`: persona and optional query; returns profile, weather, and authorized typed memories from the selected source.
-- `POST /api/preference`: persona and retrieved preference ID; validates type and accepts a pin/write.
-- `POST /api/search`: persona, selected provider, query, history, prior result IDs and constraints; returns validated ranked products, concise reply, relevant filters, and audit.
-
-`npm test` uses isolated test transports to verify request contracts, dataset isolation, state migration, hard filters, score validation, and failure handling without paid vendor calls. These tests do not establish live service availability.
-
-With the selected agent and Superlinked credentials configured, run:
+To enable encrypted in-app connections on deployed hosts, set **SESSION_ENCRYPTION_KEY** to 32 random bytes, encoded as base64 or 64 hex characters:
 
 ```sh
-npm run test:live -- --provider=openai
-# Or --provider=claude / --provider=grok
+node -e "console.log(require('node:crypto').randomBytes(32).toString('base64'))"
 ```
 
-This explicitly performs connection tests, both initial persona searches, and referenced follow-ups, then checks for a different candidate set or ranking. With `CONTEXT_SOURCE=cognee`, it also verifies both datasets. Missing credentials fail immediately; the app is not reported operational until live checks pass.
+Keep that value private and stable across instances. Rotation invalidates existing credential sessions. Local development generates an ephemeral process key if omitted; restarting the server requires reconnecting. Deployed hosts fail closed if the encryption secret is missing. This is the only required deployment secret for users to connect their own integrations. Built-in shopping still works without it.
 
-Primary API references: [OpenAI structured outputs](https://developers.openai.com/api/docs/guides/structured-outputs), [Claude structured outputs](https://platform.claude.com/docs/en/build-with-claude/structured-outputs), [Grok structured outputs](https://docs.x.ai/developers/model-capabilities/text/structured-outputs), [Cognee API](https://docs.cognee.ai/api-reference/introduction), and [Superlinked scoring](https://superlinked.com/docs/reference/api).
+Optional server-managed variables are documented in `.env.example`: native agent keys/models; `SUPERLINKED_API_KEY`, base URL and scoring model; and `CONTEXT_SOURCE=sample|cognee` plus Cognee Cloud key, tenant URL and dataset IDs. UI messages do not expose hosting instructions. Set deployment traffic and vendor spend limits appropriate for sharing paid connections. Profiles are fictional demonstration accounts, not a private multi-user authentication system.
+
+For Cognee setup, set its key and tenant URL locally and run `npm run setup:cognee`. It creates/reuses separate datasets, ingests typed profile/weather/memory records and verifies source-backed CHUNKS retrieval. Copy the resulting IDs into the Settings connection form or server-managed configuration. Identical seed content can be ingested again safely. No datasets are deleted. Selecting Cognee never falls back to sample context if retrieval fails.
+
+## Product provenance
+
+The catalog contains **24 backpacks, 18 work/daily totes and 18 jackets**, representing 60 distinct product models rather than color variants. Brands include Aer, Topo Designs, TOM BIHN, Day Owl, Dagne Dover, ABLE, Caraa, Lo & Sons, Taylor Stitch and Outdoor Research. All records retain merchant/source URLs, capture dates, local photos/original image URLs, variant IDs/prices, and supported attributes. See `CATALOG_SOURCES.md`.
+
+Snapshots were captured November 20, 2026. Price and availability are not live-verified; merchant links confirm final facts. Weather is a fictional dated scenario, not a forecast. Style, organization and roominess are identified editorial classifications. Unknown dimensions/closures/carrying styles remain unknown. A `rain` attribute may refer to documented weather-protective fabric or zippers, with source evidence where available; it is never promoted to waterproof.
+
+Checkout is explicitly simulated. Manual and agent-assisted review create local receipts, not merchant orders or payments. This distinction remains visible at confirmation.
+
+## Activity
+
+The Activity view derives counts from actual local interactions and displays an Amplitude-compatible event log. It is labeled **Stored locally · Amplitude not connected**. There is no Amplitude SDK, network transmission or fabricated conversion rate. Events have stable IDs, timestamps, profile/thread IDs and allowlisted product/filter properties; credentials and raw personal context are excluded. Result-display events are deduplicated across rerenders. Activity and suppression state are isolated by profile.
+
+## Data and APIs
+
+Browser state uses `known-shopping-v4`. Earlier v3 state is preserved; unanswered legacy chats are repaired through the built-in engine and ready examples are populated. New filters update the existing result message and its revision/audit. Approved learning, cart, receipts, events and suppressions persist locally; credential cookies are separate. No cross-device conversation synchronization is included.
+
+- `GET /api/config`: redacted configuration, session status and selected context source.
+- `GET/POST /api/connections`: status; validated connect/reconnect; explicit disconnect; Cognee context-source selection.
+- `POST /api/search`: profile, provider, query/history, constraints, explicit filter patch, provenance, relevant suppressions and approved learning; returns validated products, updated filters and audit.
+- `POST /api/feedback`: reviewed typed record and provenance, with explicit approval; confirms local validation or accepted Cognee ingestion/indexing.
+- `POST /api/context`, `/api/preference`: source-backed context browsing and preference pinning.
+- `POST /api/connection-test`: real configured connection checks.
+
+Search order is context retrieval + approved learning + suppression policy → selected discovery engine → catalog eligibility → selected ranking engine. Built-in ranking uses transparent attribute/context matching; native providers use validated structured output and Superlinked’s actual raw scores. No provider or external call is claimed in built-in audit steps.
+
+## Verification
+
+`npm test` exercises catalog counts/photos, all four key-free cases, changing results, suppression and explicit overrides, reviewed learning, dataset isolation, native transport contracts, authenticated session encryption, expiry/tampering/disconnection, failed reconnect preservation, secret exclusion, local analytics, migration and response handling. Tests use isolated transports rather than paid credentials.
+
+`npm run test:live -- --provider=openai` explicitly verifies the configured agent, Superlinked, both persona searches and referenced follow-ups. Claude/Grok can be selected similarly. Cognee-mode verification requires indexed datasets. Live service acceptance remains conditional on valid credentials; offline tests do not claim successful vendor calls.
