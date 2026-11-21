@@ -671,411 +671,6 @@ export const catalog = [
     "carryingStyles": []
   },
   {
-    "id": "taylor-ojai-jacket-in-topsoil-donegal-moon-wool-2610",
-    "name": "The Ojai Jacket in Topsoil Donegal Moon Wool",
-    "kind": "jacket",
-    "brand": "Taylor Stitch",
-    "merchant": "Taylor Stitch",
-    "price": 398.0,
-    "currency": "USD",
-    "features": [
-      "smart"
-    ],
-    "editorialFeatures": [
-      "smart"
-    ],
-    "description": "Donegal wool from Abraham Moon with patch pockets. Dry clean only.",
-    "image": "/images/taylor-ojai-jacket-in-topsoil-donegal-moon-wool-2610.jpg",
-    "imageAlt": "The Ojai Jacket in Topsoil Donegal Moon Wool",
-    "sourceUrl": "https://www.taylorstitch.com/products/ojai-jacket-in-topsoil-donegal-moon-wool-2610",
-    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
-    "capturedAt": "2026-11-20",
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [],
-    "weightGrams": null,
-    "laptopInches": null,
-    "capacityLiters": null,
-    "variants": [
-      {
-        "id": "42626970615885",
-        "size": "XS",
-        "color": null,
-        "price": 398.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42626970648653",
-        "size": "S",
-        "color": null,
-        "price": 398.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42626970681421",
-        "size": "M",
-        "color": null,
-        "price": 398.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42626970714189",
-        "size": "L",
-        "color": null,
-        "price": 398.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42626970746957",
-        "size": "XL",
-        "color": null,
-        "price": 398.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42626970779725",
-        "size": "XXL",
-        "color": null,
-        "price": 398.0,
-        "availableAtCapture": true
-      }
-    ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_The_Ojai_Jacket_in_Topsoil_Donegal_Moon_PDP_001.jpg?v=1793994013&width=700",
-    "modelKey": "taylor-ojai-jacket-in-topsoil-donegal-moon-wool-2610",
-    "closure": null,
-    "carryingStyles": []
-  },
-  {
-    "id": "taylor-outpost-jacket-in-coal-chipped-canvas-2611",
-    "name": "The Outpost Jacket in Coal Chipped Canvas",
-    "kind": "jacket",
-    "brand": "Taylor Stitch",
-    "merchant": "Taylor Stitch",
-    "price": 208.0,
-    "currency": "USD",
-    "features": [
-      "easyclean"
-    ],
-    "editorialFeatures": [
-      "easyclean"
-    ],
-    "description": "An unlined organic-cotton canvas jacket with an action back. Machine washable.",
-    "image": "/images/taylor-outpost-jacket-in-coal-chipped-canvas-2611.jpg",
-    "imageAlt": "The Outpost Jacket in Coal Chipped Canvas",
-    "sourceUrl": "https://www.taylorstitch.com/products/outpost-jacket-in-coal-chipped-canvas-2611",
-    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
-    "capturedAt": "2026-11-20",
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [],
-    "weightGrams": null,
-    "laptopInches": null,
-    "capacityLiters": null,
-    "variants": [
-      {
-        "id": "42836016660557",
-        "size": "XS",
-        "color": null,
-        "price": 208.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836016693325",
-        "size": "S",
-        "color": null,
-        "price": 208.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836016726093",
-        "size": "M",
-        "color": null,
-        "price": 208.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836016758861",
-        "size": "L",
-        "color": null,
-        "price": 208.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836016791629",
-        "size": "XL",
-        "color": null,
-        "price": 208.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836016824397",
-        "size": "XXL",
-        "color": null,
-        "price": 208.0,
-        "availableAtCapture": true
-      }
-    ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_The_Outpost_Jacket_in_Coal_Chipped_Canvas_PDP_001.jpg?v=1794243767&width=700",
-    "modelKey": "taylor-outpost-jacket-in-coal-chipped-canvas-2611",
-    "closure": null,
-    "carryingStyles": []
-  },
-  {
-    "id": "taylor-maritime-shirt-jacket-in-burgundy-moleskin-twill-2609",
-    "name": "The Maritime Shirt Jacket in Burgundy Moleskin Twill",
-    "kind": "jacket",
-    "brand": "Taylor Stitch",
-    "merchant": "Taylor Stitch",
-    "price": 188.0,
-    "currency": "USD",
-    "features": [
-      "easyclean"
-    ],
-    "editorialFeatures": [
-      "easyclean"
-    ],
-    "description": "A burgundy organic-cotton moleskin layer with oversized chest pockets.",
-    "image": "/images/taylor-maritime-shirt-jacket-in-burgundy-moleskin-twill-2609.jpg",
-    "imageAlt": "The Maritime Shirt Jacket in Burgundy Moleskin Twill",
-    "sourceUrl": "https://www.taylorstitch.com/products/maritime-shirt-jacket-in-burgundy-moleskin-twill-2609",
-    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
-    "capturedAt": "2026-11-20",
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [],
-    "weightGrams": null,
-    "laptopInches": null,
-    "capacityLiters": null,
-    "variants": [
-      {
-        "id": "42507581292621",
-        "size": "XS",
-        "color": null,
-        "price": 188.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42507581325389",
-        "size": "S",
-        "color": null,
-        "price": 188.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42507581358157",
-        "size": "M",
-        "color": null,
-        "price": 188.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42507581390925",
-        "size": "L",
-        "color": null,
-        "price": 188.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42507581423693",
-        "size": "XL",
-        "color": null,
-        "price": 188.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42507581456461",
-        "size": "XXL",
-        "color": null,
-        "price": 188.0,
-        "availableAtCapture": false
-      }
-    ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/maritime-shirt-jacket-in-burgundy-moleskin-twill-2609_001.jpg?v=1790611810&width=700",
-    "modelKey": "taylor-maritime-shirt-jacket-in-burgundy-moleskin-twill-2609",
-    "closure": null,
-    "carryingStyles": []
-  },
-  {
-    "id": "taylor-kenne-shirt-jacket-in-blue-fog-cotton-wool-crepe-2607",
-    "name": "The Kenne Shirt Jacket in Blue Fog Cotton Wool Crepe",
-    "kind": "jacket",
-    "brand": "Taylor Stitch",
-    "merchant": "Taylor Stitch",
-    "price": 152.6,
-    "currency": "USD",
-    "features": [
-      "easyclean"
-    ],
-    "editorialFeatures": [
-      "easyclean"
-    ],
-    "description": "A cotton-wool crepe shirt jacket with lined handwarmer pockets. Hand wash.",
-    "image": "/images/taylor-kenne-shirt-jacket-in-blue-fog-cotton-wool-crepe-2607.jpg",
-    "imageAlt": "The Kenne Shirt Jacket in Blue Fog Cotton Wool Crepe",
-    "sourceUrl": "https://www.taylorstitch.com/products/kenne-shirt-jacket-in-blue-fog-cotton-wool-crepe-2607",
-    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
-    "capturedAt": "2026-11-20",
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [],
-    "weightGrams": null,
-    "laptopInches": null,
-    "capacityLiters": null,
-    "variants": [
-      {
-        "id": "42507565170765",
-        "size": "XS",
-        "color": null,
-        "price": 152.6,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42507565203533",
-        "size": "S",
-        "color": null,
-        "price": 152.6,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42507565236301",
-        "size": "M",
-        "color": null,
-        "price": 152.6,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42507565269069",
-        "size": "L",
-        "color": null,
-        "price": 152.6,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42507565301837",
-        "size": "XL",
-        "color": null,
-        "price": 152.6,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42507565334605",
-        "size": "XXL",
-        "color": null,
-        "price": 152.6,
-        "availableAtCapture": true
-      }
-    ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/kenne-shirt-jacket-in-blue-fog-cotton-wool-crepe-2607_001_cb35ef69-134c-4ce8-82bc-a6940d44e4f0.jpg?v=1790614761&width=700",
-    "modelKey": "taylor-kenne-shirt-jacket-in-blue-fog-cotton-wool-crepe-2607",
-    "closure": null,
-    "carryingStyles": []
-  },
-  {
-    "id": "taylor-haight-jacket-in-light-wash-hemp-denim-2606",
-    "name": "The Haight Jacket in Light Wash Hemp Denim",
-    "kind": "jacket",
-    "brand": "Taylor Stitch",
-    "merchant": "Taylor Stitch",
-    "price": 166.6,
-    "currency": "USD",
-    "features": [
-      "easyclean"
-    ],
-    "editorialFeatures": [
-      "easyclean"
-    ],
-    "description": "A washed cotton-hemp denim jacket with adjustable back tabs. Machine washable.",
-    "image": "/images/taylor-haight-jacket-in-light-wash-hemp-denim-2606.jpg",
-    "imageAlt": "The Haight Jacket in Light Wash Hemp Denim",
-    "sourceUrl": "https://www.taylorstitch.com/products/haight-jacket-in-light-wash-hemp-denim-2606",
-    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
-    "capturedAt": "2026-11-20",
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [],
-    "weightGrams": null,
-    "laptopInches": null,
-    "capacityLiters": null,
-    "variants": [
-      {
-        "id": "42325201485901",
-        "size": "XS",
-        "color": null,
-        "price": 166.6,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42325201518669",
-        "size": "S",
-        "color": null,
-        "price": 166.6,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42325201551437",
-        "size": "M",
-        "color": null,
-        "price": 166.6,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42325201584205",
-        "size": "L",
-        "color": null,
-        "price": 166.6,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42325201616973",
-        "size": "XL",
-        "color": null,
-        "price": 166.6,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42325201649741",
-        "size": "XXL",
-        "color": null,
-        "price": 166.6,
-        "availableAtCapture": true
-      }
-    ],
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/haight-jacket-in-light-wash-hemp-denim-2606_001.jpg?v=1790616700&width=700",
-    "modelKey": "taylor-haight-jacket-in-light-wash-hemp-denim-2606",
-    "closure": null,
-    "carryingStyles": []
-  },
-  {
     "id": "outdoor-mens-cloudchaser-3l-jacket-322497",
     "name": "Men's Limited Edition Cloudchaser 3L Jacket",
     "kind": "jacket",
@@ -2884,7 +2479,7 @@ export const catalog = [
       "minimal"
     ],
     "featureEvidence": {
-      "rain": "0D nylon face with a durable, weather resistant coating • YKK® zippers • Duraflex® hardware • Soft woven recycled nyl",
+      "rain": "0D nylon face with a durable, weather resistant coating \u2022 YKK\u00ae zippers \u2022 Duraflex\u00ae hardware \u2022 Soft woven recycled nyl",
       "laptop": "e By Style All Pouches + Kits Laptop Sleeves Packing Cubes Small Accessories Stockists About Us Contact Re",
       "organizer": "he Tech Pack 3 is designed to organize and protect your tech essentials. It features a minimalist look and ",
       "minimal": "ech essentials. It features a minimalist look and feel, multiple compartments for your everyday gear, and a"
@@ -2935,7 +2530,7 @@ export const catalog = [
     ],
     "featureEvidence": {
       "laptop": "e By Style All Pouches + Kits Laptop Sleeves Packing Cubes Small Accessories Stockists About Us Contact Re",
-      "organizer": "brief. It also features smart organization to keep you organized and ready to work on the go. Move Smarter™"
+      "organizer": "brief. It also features smart organization to keep you organized and ready to work on the go. Move Smarter\u2122"
     },
     "editorialFeatures": [
       "organizer"
@@ -3153,14 +2748,14 @@ export const catalog = [
       "light"
     ],
     "featureEvidence": {
-      "organizer": "d trims, quick-access storage pockets, and simple organization for your daily travel needs. Move Smarter™. ",
+      "organizer": "d trims, quick-access storage pockets, and simple organization for your daily travel needs. Move Smarter\u2122. ",
       "packable": " The packable travel tote bag The Go Tote 2 is a lightweight, packable tote bag tha",
-      "light": "l tote bag The Go Tote 2 is a lightweight, packable tote bag that’s designed for all-day adventures in the city"
+      "light": "l tote bag The Go Tote 2 is a lightweight, packable tote bag that\u2019s designed for all-day adventures in the city"
     },
     "editorialFeatures": [
       "organizer"
     ],
-    "description": "The packable travel tote bag The Go Tote 2 is a lightweight, packable tote bag that’s designed for all-day adventures in the city.",
+    "description": "The packable travel tote bag The Go Tote 2 is a lightweight, packable tote bag that\u2019s designed for all-day adventures in the city.",
     "image": "/images/aer-go-tote-2.jpg",
     "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0252/4181/3088/files/aer_gotote2_black.jpg?v=1713810925",
     "sourceUrl": "https://aersf.com/products/go-tote-2",
@@ -3218,15 +2813,15 @@ export const catalog = [
     ],
     "featureEvidence": {
       "rain": "ppers: 3x #8 YKK racquet coil water-repellent zippers with metal sliders Interior Zipper: 2x #5 YKK coil zipper wit",
-      "laptop": "taller items. Built-in padded laptop compartment with exterior entry that fits most 13” laptops and is sus",
+      "laptop": "taller items. Built-in padded laptop compartment with exterior entry that fits most 13\u201d laptops and is sus",
       "organizer": "y. Asymmetrical half-zip main compartment makes packing intuitive. Perfect for packing up your mobile office, h",
-      "minimal": "The Luminary 15 is a compact, streamlined backpack designed for the urban experience – days wandering museums, "
+      "minimal": "The Luminary 15 is a compact, streamlined backpack designed for the urban experience \u2013 days wandering museums, "
     },
     "editorialFeatures": [
       "organizer",
       "minimal"
     ],
-    "description": "The Luminary 15 is a compact, streamlined backpack designed for the urban experience – days wandering museums, grabbing coffee, commuting across town, or heading out for the evening.",
+    "description": "The Luminary 15 is a compact, streamlined backpack designed for the urban experience \u2013 days wandering museums, grabbing coffee, commuting across town, or heading out for the evening.",
     "image": "/images/tombihn-luminary-15.jpg",
     "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/files/TB0108-BK-Luminary15-BlackBallistic-1.jpg?v=1789675110",
     "sourceUrl": "https://www.tombihn.com/products/luminary-15",
@@ -3300,7 +2895,7 @@ export const catalog = [
     ],
     "featureEvidence": {
       "rain": "Zippers \\n#8 YKK racquet coil water-repellent zippers with metal sliders Interior Zippers \\n #5 YKK coil zipper wit",
-      "laptop": " 13” devices. Built-in padded laptop compartment with exterior entry. Fits most 16\" laptops and is suspend"
+      "laptop": " 13\u201d devices. Built-in padded laptop compartment with exterior entry. Fits most 16\" laptops and is suspend"
     },
     "editorialFeatures": [],
     "description": "The Adept is a roll-top backpack built for commuting, travel, and everyday carry.",
@@ -3381,13 +2976,13 @@ export const catalog = [
       "rain": "rs \\n 1x #10 YKK Racquet-Coil Water-Repellent Zipper with lockable metal sliders \\n2x #8 YKK Racquet-Coil Water-Rep",
       "laptop": "d keep them easy to find Easy Laptop Access : Two-way entry to a padded laptop compartment that fits most ",
       "organizer": "ile offering a more open main compartment with fewer built-in elements, giving you room to make it your own. Th",
-      "roomy": "modern pack design—versatile, spacious, and built for customization. It shares the same frame and capacity a"
+      "roomy": "modern pack design\u2014versatile, spacious, and built for customization. It shares the same frame and capacity a"
     },
     "editorialFeatures": [
       "organizer",
       "roomy"
     ],
-    "description": "The Smart Alec 2.0 sits at the intersection of DIY spirit and modern pack design—versatile, spacious, and built for customization.",
+    "description": "The Smart Alec 2.0 sits at the intersection of DIY spirit and modern pack design\u2014versatile, spacious, and built for customization.",
     "image": "/images/tombihn-smart-alec-2.jpg",
     "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/files/TB0102-BT-1.jpg?v=1750867307",
     "sourceUrl": "https://www.tombihn.com/products/smart-alec-2",
@@ -3509,7 +3104,7 @@ export const catalog = [
       "organizer"
     ],
     "featureEvidence": {
-      "rain": "Zipper: 1x #10 YKK Aquaguard® water-repellent zipper with metal slider All Other Exterior Zippers: 6x #8 YKK racque",
+      "rain": "Zipper: 1x #10 YKK Aquaguard\u00ae water-repellent zipper with metal slider All Other Exterior Zippers: 6x #8 YKK racque",
       "laptop": " still accommodating a larger laptop than the Synik 22. Features include: Two-point access laptop compartm",
       "organizer": "lude: Two-point access laptop compartment (14\" x 9.5\" x 0.75\") that holds up to most 15\" laptops 5 exterior fro"
     },
@@ -3955,7 +3550,7 @@ export const catalog = [
       "Nebulous Grey Ballistic/Island 200 Halcyon",
       "Ursa Ballistic/Cobalt 210 Cerylon",
       "Wilderness Ballistic/Taiga 200 Halcyon",
-      "Black X-Pac®/Solaris 200 Halcyon"
+      "Black X-Pac\u00ae/Solaris 200 Halcyon"
     ],
     "weightGrams": null,
     "laptopInches": null,
@@ -4031,7 +3626,7 @@ export const catalog = [
       {
         "id": "42355546030269",
         "size": null,
-        "color": "Black X-Pac®/Solaris 200 Halcyon",
+        "color": "Black X-Pac\u00ae/Solaris 200 Halcyon",
         "price": 315.0,
         "availableAtCapture": false
       }
@@ -4242,7 +3837,7 @@ export const catalog = [
       "organizer",
       "minimal"
     ],
-    "description": "A compact, retro-inspired backpack reissued from a vintage TOM BIHN design from the ’90s.",
+    "description": "A compact, retro-inspired backpack reissued from a vintage TOM BIHN design from the \u201990s.",
     "image": "/images/tombihn-zeitgeist.jpg",
     "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/products/Zeitgeist_Aub-Coy.jpg?v=1703023573",
     "sourceUrl": "https://www.tombihn.com/products/zeitgeist",
@@ -4801,7 +4396,7 @@ export const catalog = [
     "features": [],
     "featureEvidence": {},
     "editorialFeatures": [],
-    "description": "Our spies have informed us that some of you(we shan’t name names here) were shamelessly using our Truck tote as a yoga and gym bag.",
+    "description": "Our spies have informed us that some of you(we shan\u2019t name names here) were shamelessly using our Truck tote as a yoga and gym bag.",
     "image": "/images/tombihn-truckasana.jpg",
     "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1089/8530/products/Truckasana_Wild.jpg?v=1638368243",
     "sourceUrl": "https://www.tombihn.com/products/truckasana",
@@ -4914,7 +4509,7 @@ export const catalog = [
     ],
     "featureEvidence": {
       "rain": " Laptop Sleeve Free Exchanges Water Repellant Canvas Individually Numbered Magnetic Clasp Built for Repairs Store C",
-      "laptop": "bag’s for you. It fits a 14in laptop, and the insulated neoprene sleeve fits a 32 oz water bottle (a narro"
+      "laptop": "bag\u2019s for you. It fits a 14in laptop, and the insulated neoprene sleeve fits a 32 oz water bottle (a narro"
     },
     "editorialFeatures": [],
     "description": "The Slim Pro has every feature of the the Backpack Pro in a slightly lower volume and profile.",
@@ -5098,13 +4693,13 @@ export const catalog = [
       "packable": "me, while folding down into a packable large tote bag with a zipper that tucks flat into a suitcase corner u",
       "easyclean": "uper Soft Nylon poly blend is machine washable with a mild detergent in cold water. Reshape while damp and lay f",
       "minimal": "the bag adjusts from slim and streamlined to full-on weekend-mode. And because the whole thing packs into its o",
-      "light": "or pouch, it’s just as much a lightweight packable tote bag for your carry-on as it is a stand-alone bag for gr"
+      "light": "or pouch, it\u2019s just as much a lightweight packable tote bag for your carry-on as it is a stand-alone bag for gr"
     },
     "editorialFeatures": [
       "easyclean",
       "minimal"
     ],
-    "description": "Meet the Super Soft Large Tote in Black Some bags ask you to choose between “big enough” and “easy to carry.” The Super Soft Large Tote doesn’t make you pick.",
+    "description": "Meet the Super Soft Large Tote in Black Some bags ask you to choose between \u201cbig enough\u201d and \u201ceasy to carry.\u201d The Super Soft Large Tote doesn\u2019t make you pick.",
     "image": "/images/dagne-super-soft-large-tote-onyx.jpg",
     "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0260/1439/files/SuperSoft_Nylon_LargeTote_L_Onyx_Front_2_084c9801-c9fa-4d38-b434-602a8028342e.jpg?v=1789506887",
     "sourceUrl": "https://www.dagnedover.com/products/super-soft-large-tote-onyx",
@@ -5181,10 +4776,10 @@ export const catalog = [
       "laptop"
     ],
     "featureEvidence": {
-      "laptop": "-off to dinner, it fits a 16\" laptop and your daily essentials, with comfortable shoulder straps you’ll re"
+      "laptop": "-off to dinner, it fits a 16\" laptop and your daily essentials, with comfortable shoulder straps you\u2019ll re"
     },
     "editorialFeatures": [],
-    "description": "Made to move with you from work to gym, drop-off to dinner, it fits a 16\" laptop and your daily essentials, with comfortable shoulder straps you’ll reach for again and again.",
+    "description": "Made to move with you from work to gym, drop-off to dinner, it fits a 16\" laptop and your daily essentials, with comfortable shoulder straps you\u2019ll reach for again and again.",
     "image": "/images/able-mamuye-classic-tote.jpg",
     "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1136/2606/files/Mamuye-Tote-Mushroom-Front-Product-ABLE.png?v=1790865915",
     "sourceUrl": "https://www.ableclothing.com/products/mamuye-classic-tote",
@@ -5367,7 +4962,7 @@ export const catalog = [
     "editorialFeatures": [
       "organizer"
     ],
-    "description": "Crafted from buttery leather, the Studio Tote transitions from tote to backpack with ease — sleek, smart, and built for whatever the day brings.",
+    "description": "Crafted from buttery leather, the Studio Tote transitions from tote to backpack with ease \u2014 sleek, smart, and built for whatever the day brings.",
     "image": "/images/caraa-studio-tote-leather-large.jpg",
     "imageSourceUrl": "https://cdn.shopify.com/s/files/1/1986/1127/files/1_ad1d7a80-1ea8-40de-a87d-019145b380cb.jpg?v=1730827344",
     "sourceUrl": "https://caraa.co/products/studio-tote-leather-large",
@@ -5472,175 +5067,6 @@ export const catalog = [
         "size": null,
         "color": "Onyx - 600D Recycled Poly",
         "price": 100.8,
-        "availableAtCapture": true
-      }
-    ]
-  },
-  {
-    "id": "taylor-alta-jacket-in-montana-plaid-fleece-2610",
-    "modelKey": "taylor-alta-jacket",
-    "name": "The Alta Jacket in Montana Plaid Fleece",
-    "kind": "jacket",
-    "brand": "Taylor Stitch",
-    "merchant": "Taylor Stitch",
-    "price": 218.0,
-    "currency": "USD",
-    "features": [
-      "organizer",
-      "easyclean"
-    ],
-    "featureEvidence": {
-      "organizer": "et detailing. Two lower patch pockets. Encased elastic at sleeve opening. Stand collar. Two way separating ",
-      "easyclean": "wo way separating YKK zipper. Wash cold and tumble dry low. Made in China. "
-    },
-    "editorialFeatures": [
-      "organizer",
-      "easyclean"
-    ],
-    "description": "The Alta Jacket in Montana Plaid Fleece from Taylor Stitch 16-oz.",
-    "image": "/images/taylor-alta-jacket-in-montana-plaid-fleece-2610.jpg",
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_The_Alta_Jacket_in_Montana_Plaid_Fleece_PDP_001.jpg?v=1791566573",
-    "sourceUrl": "https://www.taylorstitch.com/products/alta-jacket-in-montana-plaid-fleece-2610",
-    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
-    "capturedAt": "2026-11-20",
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [],
-    "weightGrams": null,
-    "laptopInches": null,
-    "capacityLiters": null,
-    "closure": null,
-    "carryingStyles": [],
-    "variants": [
-      {
-        "id": "42836031012941",
-        "size": "XS",
-        "color": null,
-        "price": 218.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836031045709",
-        "size": "S",
-        "color": null,
-        "price": 218.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836031078477",
-        "size": "M",
-        "color": null,
-        "price": 218.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836031111245",
-        "size": "L",
-        "color": null,
-        "price": 218.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836031144013",
-        "size": "XL",
-        "color": null,
-        "price": 218.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836031176781",
-        "size": "XXL",
-        "color": null,
-        "price": 218.0,
-        "availableAtCapture": true
-      }
-    ]
-  },
-  {
-    "id": "taylor-drover-jacket-in-bourbon-suede-2611",
-    "modelKey": "taylor-drover-jacket",
-    "name": "The Drover Jacket in Bourbon Suede",
-    "kind": "jacket",
-    "brand": "Taylor Stitch",
-    "merchant": "Taylor Stitch",
-    "price": 798.0,
-    "currency": "USD",
-    "features": [
-      "organizer"
-    ],
-    "featureEvidence": {
-      "organizer": "st pocket and two lower patch pockets with button flap closure. Back tabs with metal ladder buckle for wais"
-    },
-    "editorialFeatures": [
-      "organizer"
-    ],
-    "description": "The Drover Jacket in Bourbon Suede from Taylor Stitch Goat suede.",
-    "image": "/images/taylor-drover-jacket-in-bourbon-suede-2611.jpg",
-    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0070/1922/files/Q426_TheDroverJacketinBourbonSuede_PDP_001.jpg?v=1791836692",
-    "sourceUrl": "https://www.taylorstitch.com/products/drover-jacket-in-bourbon-suede-2611",
-    "catalogSource": "https://www.taylorstitch.com/products.json?limit=250",
-    "capturedAt": "2026-11-20",
-    "sizes": [
-      "XS",
-      "S",
-      "M",
-      "L",
-      "XL",
-      "XXL"
-    ],
-    "colors": [],
-    "weightGrams": null,
-    "laptopInches": null,
-    "capacityLiters": null,
-    "closure": null,
-    "carryingStyles": [],
-    "variants": [
-      {
-        "id": "42836043464781",
-        "size": "XS",
-        "color": null,
-        "price": 798.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836043497549",
-        "size": "S",
-        "color": null,
-        "price": 798.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836043530317",
-        "size": "M",
-        "color": null,
-        "price": 798.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836043563085",
-        "size": "L",
-        "color": null,
-        "price": 798.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836043595853",
-        "size": "XL",
-        "color": null,
-        "price": 798.0,
-        "availableAtCapture": true
-      },
-      {
-        "id": "42836043628621",
-        "size": "XXL",
-        "color": null,
-        "price": 798.0,
         "availableAtCapture": true
       }
     ]
@@ -5983,5 +5409,950 @@ export const catalog = [
         "availableAtCapture": false
       }
     ]
+  },
+  {
+    "id": "us-4-pocket-ponte-blazer-houndstooth-tweed",
+    "modelKey": "us-4-pocket-ponte-blazer",
+    "name": "4 Pocket Ponte Blazer - Houndstooth Tweed",
+    "kind": "jacket",
+    "brand": "Universal Standard",
+    "merchant": "Universal Standard",
+    "price": 268.0,
+    "currency": "USD",
+    "features": [
+      "smart"
+    ],
+    "editorialFeatures": [],
+    "description": "It\u201a\u00c4\u00f4s 2026, and we mean business.",
+    "image": "/images/us-4-pocket-ponte-blazer-houndstooth-tweed.jpg",
+    "imageAlt": "4 Pocket Ponte Blazer - Houndstooth Tweed",
+    "sourceUrl": "https://www.universalstandard.com/products/4-pocket-ponte-blazer-houndstooth-tweed",
+    "catalogSource": "https://www.universalstandard.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "4XS",
+      "3XS",
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL",
+      "4XL"
+    ],
+    "colors": [
+      "Houndstooth Tweed"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "variants": [
+      {
+        "id": "42822831505454",
+        "size": "4XS",
+        "sizeLabel": "4XS \u00b7 US 00-0",
+        "color": "Houndstooth Tweed",
+        "price": 268.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42822831538222",
+        "size": "3XS",
+        "sizeLabel": "3XS \u00b7 US 2-4",
+        "color": "Houndstooth Tweed",
+        "price": 268.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42822831570990",
+        "size": "2XS",
+        "sizeLabel": "2XS \u00b7 US 6-8",
+        "color": "Houndstooth Tweed",
+        "price": 268.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42822831603758",
+        "size": "XS",
+        "sizeLabel": "XS \u00b7 US 10-12",
+        "color": "Houndstooth Tweed",
+        "price": 268.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42822831636526",
+        "size": "S",
+        "sizeLabel": "S \u00b7 US 14-16",
+        "color": "Houndstooth Tweed",
+        "price": 268.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42822831669294",
+        "size": "M",
+        "sizeLabel": "M \u00b7 US 18-20",
+        "color": "Houndstooth Tweed",
+        "price": 268.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42822831702062",
+        "size": "L",
+        "sizeLabel": "L \u00b7 US 22-24",
+        "color": "Houndstooth Tweed",
+        "price": 268.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42822831734830",
+        "size": "XL",
+        "sizeLabel": "XL \u00b7 US 26-28",
+        "color": "Houndstooth Tweed",
+        "price": 268.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42822831767598",
+        "size": "XXL",
+        "sizeLabel": "2XL \u00b7 US 30-32",
+        "color": "Houndstooth Tweed",
+        "price": 268.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42822831800366",
+        "size": "3XL",
+        "sizeLabel": "3XL \u00b7 US 34-36",
+        "color": "Houndstooth Tweed",
+        "price": 268.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42822831833134",
+        "size": "4XL",
+        "sizeLabel": "4XL \u00b7 US 38-40",
+        "color": "Houndstooth Tweed",
+        "price": 268.0,
+        "availableAtCapture": true
+      }
+    ],
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0838/4441/files/USOU2078-12694-Pocket-BlazerHoundstooth-Tweed_042.jpg?v=1793381038",
+    "featureEvidence": {
+      "smart": "It\u201a\u00c4\u00f4s 2026, and we mean business. Business chic, that is. Amp up your New Year\u201a\u00c4\u00f4s wardrobe with the 4 Pocket Ponte Blazer, made in our softly structured, easy-to-care-for, and super-stretchy ponte fabric. No detail is spared, with deep pockets and button accents that elevate this everyday essential blazer into something special. Cut with a straighter fit through the body, the 4 Pocket Blazer pairs back with any style in our Ponte Pants collection\u201a\u00c4\u00eemaking it easy to find your perfect-fitting suit."
+    },
+    "closure": null,
+    "carryingStyles": []
+  },
+  {
+    "id": "us-all-day-warren-double-breasted-blazer-navy",
+    "modelKey": "us-all-day-warren-double-breasted-blazer",
+    "name": "All Day Warren Double Breasted Blazer - Navy",
+    "kind": "jacket",
+    "brand": "Universal Standard",
+    "merchant": "Universal Standard",
+    "price": 368.0,
+    "currency": "USD",
+    "features": [
+      "smart"
+    ],
+    "editorialFeatures": [],
+    "description": "This standout piece, designed in collaboration with Lauren Chan of Henning, takes inspiration from one of the luxury brand\u2019s best-selling styles.",
+    "image": "/images/us-all-day-warren-double-breasted-blazer-navy.jpg",
+    "imageAlt": "All Day Warren Double Breasted Blazer - Navy",
+    "sourceUrl": "https://www.universalstandard.com/products/all-day-warren-double-breasted-blazer-navy",
+    "catalogSource": "https://www.universalstandard.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "4XS",
+      "3XS",
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL",
+      "4XL"
+    ],
+    "colors": [
+      "Navy"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "variants": [
+      {
+        "id": "42637954318382",
+        "size": "4XS",
+        "sizeLabel": "4XS \u00b7 US 00-0",
+        "color": "Navy",
+        "price": 368.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637954351150",
+        "size": "3XS",
+        "sizeLabel": "3XS \u00b7 US 2-4",
+        "color": "Navy",
+        "price": 368.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637954383918",
+        "size": "2XS",
+        "sizeLabel": "2XS \u00b7 US 6-8",
+        "color": "Navy",
+        "price": 368.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637954416686",
+        "size": "XS",
+        "sizeLabel": "XS \u00b7 US 10-12",
+        "color": "Navy",
+        "price": 368.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637954449454",
+        "size": "S",
+        "sizeLabel": "S \u00b7 US 14-16",
+        "color": "Navy",
+        "price": 368.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637954482222",
+        "size": "M",
+        "sizeLabel": "M \u00b7 US 18-20",
+        "color": "Navy",
+        "price": 368.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637954514990",
+        "size": "L",
+        "sizeLabel": "L \u00b7 US 22-24",
+        "color": "Navy",
+        "price": 368.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637954547758",
+        "size": "XL",
+        "sizeLabel": "XL \u00b7 US 26-28",
+        "color": "Navy",
+        "price": 368.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637954580526",
+        "size": "XXL",
+        "sizeLabel": "2XL \u00b7 US 30-32",
+        "color": "Navy",
+        "price": 368.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637954613294",
+        "size": "3XL",
+        "sizeLabel": "3XL \u00b7 US 34-36",
+        "color": "Navy",
+        "price": 368.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637954646062",
+        "size": "4XL",
+        "sizeLabel": "4XL \u00b7 US 38-40",
+        "color": "Navy",
+        "price": 368.0,
+        "availableAtCapture": true
+      }
+    ],
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0838/4441/files/SHOT_13_005_4e584d23-2aa8-49eb-93c8-91b301065a51.jpg?v=1787861443",
+    "featureEvidence": {
+      "smart": "This standout piece, designed in collaboration with Lauren Chan of Henning, takes inspiration from one of the luxury brand\u2019s best-selling styles. Crafted from our stretchy, comfortable, and sustainable All Day suiting fabric, this blazer combines precision tailoring with effortless wearability. A soft collar construction ensures comfort at the neck, while generously cut sleeves allow for easy movement. The double-breasted design is carefully engineered to avoid a boxy fit and won\u2019t pull when buttoned. Thoughtful seam and dart details create a soft shape through the waist, complemented by a double vent in the back for added room at the hip. A workwear favorite, this blazer pairs effortlessly with any pant silhouette in the All Day collection, letting you create your perfect suit."
+    },
+    "closure": null,
+    "carryingStyles": []
+  },
+  {
+    "id": "us-all-day-classic-blazer-navy",
+    "modelKey": "us-all-day-classic-blazer",
+    "name": "All Day Classic Blazer - Navy",
+    "kind": "jacket",
+    "brand": "Universal Standard",
+    "merchant": "Universal Standard",
+    "price": 298.0,
+    "currency": "USD",
+    "features": [
+      "smart"
+    ],
+    "editorialFeatures": [],
+    "description": "If you\u2019re looking for a blazer that\u2019s eternally stylish and effortlessly chic, the All Day Classic Blazer is the ultimate choice.",
+    "image": "/images/us-all-day-classic-blazer-navy.jpg",
+    "imageAlt": "All Day Classic Blazer - Navy",
+    "sourceUrl": "https://www.universalstandard.com/products/all-day-classic-blazer-navy",
+    "catalogSource": "https://www.universalstandard.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "4XS",
+      "3XS",
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL",
+      "4XL"
+    ],
+    "colors": [
+      "Navy"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "variants": [
+      {
+        "id": "42637952778286",
+        "size": "4XS",
+        "sizeLabel": "4XS \u00b7 US 00-0",
+        "color": "Navy",
+        "price": 298.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637952811054",
+        "size": "3XS",
+        "sizeLabel": "3XS \u00b7 US 2-4",
+        "color": "Navy",
+        "price": 298.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637952843822",
+        "size": "2XS",
+        "sizeLabel": "2XS \u00b7 US 6-8",
+        "color": "Navy",
+        "price": 298.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637952876590",
+        "size": "XS",
+        "sizeLabel": "XS \u00b7 US 10-12",
+        "color": "Navy",
+        "price": 298.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637952909358",
+        "size": "S",
+        "sizeLabel": "S \u00b7 US 14-16",
+        "color": "Navy",
+        "price": 298.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637952942126",
+        "size": "M",
+        "sizeLabel": "M \u00b7 US 18-20",
+        "color": "Navy",
+        "price": 298.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637952974894",
+        "size": "L",
+        "sizeLabel": "L \u00b7 US 22-24",
+        "color": "Navy",
+        "price": 298.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637953007662",
+        "size": "XL",
+        "sizeLabel": "XL \u00b7 US 26-28",
+        "color": "Navy",
+        "price": 298.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637953040430",
+        "size": "XXL",
+        "sizeLabel": "2XL \u00b7 US 30-32",
+        "color": "Navy",
+        "price": 298.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637953073198",
+        "size": "3XL",
+        "sizeLabel": "3XL \u00b7 US 34-36",
+        "color": "Navy",
+        "price": 298.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42637953105966",
+        "size": "4XL",
+        "sizeLabel": "4XL \u00b7 US 38-40",
+        "color": "Navy",
+        "price": 298.0,
+        "availableAtCapture": true
+      }
+    ],
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0838/4441/files/UNIVERSALSTANDARD_08.06.262466.jpg?v=1787862729",
+    "featureEvidence": {
+      "smart": "If you\u2019re looking for a blazer that\u2019s eternally stylish and effortlessly chic, the All Day Classic Blazer is the ultimate choice. Crafted from our comfortable, stretchy, and sustainable All Day suiting fabric, this expertly tailored, lightweight jacket is a true wardrobe hero. Precision and ease are woven into every detail\u2014from the sharp notch collar to the generously cut sleeves that eliminate bunching and allow unrestricted movement. The impeccable fit through the body and hem ensures a polished silhouette with no pulling at the waist or hips. Designed to keep up with your busiest days, the generous length also makes it a tall-friendly style that transitions seamlessly from work to wherever life takes you."
+    },
+    "closure": null,
+    "carryingStyles": []
+  },
+  {
+    "id": "us-us-x-abisola-ponte-blazer-black",
+    "modelKey": "us-us-x-abisola-ponte-blazer",
+    "name": "US x Abisola Ponte Blazer - Black",
+    "kind": "jacket",
+    "brand": "Universal Standard",
+    "merchant": "Universal Standard",
+    "price": 225.0,
+    "currency": "USD",
+    "features": [
+      "smart"
+    ],
+    "editorialFeatures": [],
+    "description": "Expertly crafted inside and out, this blazer is part of our collection in collaboration with Abi Marvel.",
+    "image": "/images/us-us-x-abisola-ponte-blazer-black.jpg",
+    "imageAlt": "US x Abisola Ponte Blazer - Black",
+    "sourceUrl": "https://www.universalstandard.com/products/us-x-abisola-ponte-blazer-black",
+    "catalogSource": "https://www.universalstandard.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "4XS",
+      "3XS",
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL",
+      "4XL"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "variants": [
+      {
+        "id": "42635907072046",
+        "size": "4XS",
+        "sizeLabel": "4XS \u00b7 US 00-0",
+        "color": "Black",
+        "price": 225.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42635907104814",
+        "size": "3XS",
+        "sizeLabel": "3XS \u00b7 US 2-4",
+        "color": "Black",
+        "price": 225.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42635907137582",
+        "size": "2XS",
+        "sizeLabel": "2XS \u00b7 US 6-8",
+        "color": "Black",
+        "price": 225.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42635907170350",
+        "size": "XS",
+        "sizeLabel": "XS \u00b7 US 10-12",
+        "color": "Black",
+        "price": 225.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42635907203118",
+        "size": "S",
+        "sizeLabel": "S \u00b7 US 14-16",
+        "color": "Black",
+        "price": 225.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42635907235886",
+        "size": "M",
+        "sizeLabel": "M \u00b7 US 18-20",
+        "color": "Black",
+        "price": 225.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42635907268654",
+        "size": "L",
+        "sizeLabel": "L \u00b7 US 22-24",
+        "color": "Black",
+        "price": 225.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42635907301422",
+        "size": "XL",
+        "sizeLabel": "XL \u00b7 US 26-28",
+        "color": "Black",
+        "price": 225.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42635907334190",
+        "size": "XXL",
+        "sizeLabel": "2XL \u00b7 US 30-32",
+        "color": "Black",
+        "price": 225.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42635907366958",
+        "size": "3XL",
+        "sizeLabel": "3XL \u00b7 US 34-36",
+        "color": "Black",
+        "price": 225.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42635907399726",
+        "size": "4XL",
+        "sizeLabel": "4XL \u00b7 US 38-40",
+        "color": "Black",
+        "price": 225.0,
+        "availableAtCapture": true
+      }
+    ],
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0838/4441/files/UNIVERSALSTANDARD_08.06.262235.jpg?v=1789247100",
+    "featureEvidence": {
+      "smart": "Expertly crafted inside and out, this blazer is part of our collection in collaboration with Abi Marvel. Designed with a jewel collar and double-breasted closure, the figure-skimming silhouette is balanced by voluminous curved sleeves and finished with interior construction that keeps the jacket looking sharp and camera-ready. Made from our signature Ponte, it is fully lined and pairs back with the Ponte Wrap Pants for a head-to-toe look."
+    },
+    "closure": null,
+    "carryingStyles": []
+  },
+  {
+    "id": "us-kenton-peplum-ponte-blazer-black",
+    "modelKey": "us-kenton-peplum-ponte-blazer",
+    "name": "Kenton Peplum Ponte Blazer - Black",
+    "kind": "jacket",
+    "brand": "Universal Standard",
+    "merchant": "Universal Standard",
+    "price": 218.0,
+    "currency": "USD",
+    "features": [
+      "smart"
+    ],
+    "editorialFeatures": [],
+    "description": "A New Look in blazers, our Kenton is the latest design in our signature, best-selling ponte fabric.",
+    "image": "/images/us-kenton-peplum-ponte-blazer-black.jpg",
+    "imageAlt": "Kenton Peplum Ponte Blazer - Black",
+    "sourceUrl": "https://www.universalstandard.com/products/kenton-peplum-ponte-blazer-black",
+    "catalogSource": "https://www.universalstandard.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "4XS",
+      "3XS",
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL",
+      "4XL"
+    ],
+    "colors": [
+      "Black"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "variants": [
+      {
+        "id": "42581817131054",
+        "size": "4XS",
+        "sizeLabel": "4XS \u00b7 US 00-0",
+        "color": "Black",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581817163822",
+        "size": "3XS",
+        "sizeLabel": "3XS \u00b7 US 2-4",
+        "color": "Black",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581817196590",
+        "size": "2XS",
+        "sizeLabel": "2XS \u00b7 US 6-8",
+        "color": "Black",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581817229358",
+        "size": "XS",
+        "sizeLabel": "XS \u00b7 US 10-12",
+        "color": "Black",
+        "price": 218.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42581817262126",
+        "size": "S",
+        "sizeLabel": "S \u00b7 US 14-16",
+        "color": "Black",
+        "price": 218.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42581817294894",
+        "size": "M",
+        "sizeLabel": "M \u00b7 US 18-20",
+        "color": "Black",
+        "price": 218.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42581817327662",
+        "size": "L",
+        "sizeLabel": "L \u00b7 US 22-24",
+        "color": "Black",
+        "price": 218.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42581817360430",
+        "size": "XL",
+        "sizeLabel": "XL \u00b7 US 26-28",
+        "color": "Black",
+        "price": 218.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42581817393198",
+        "size": "XXL",
+        "sizeLabel": "2XL \u00b7 US 30-32",
+        "color": "Black",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581817425966",
+        "size": "3XL",
+        "sizeLabel": "3XL \u00b7 US 34-36",
+        "color": "Black",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581817458734",
+        "size": "4XL",
+        "sizeLabel": "4XL \u00b7 US 38-40",
+        "color": "Black",
+        "price": 218.0,
+        "availableAtCapture": true
+      }
+    ],
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0838/4441/files/SHOT_58_098.jpg?v=1785274322",
+    "featureEvidence": {
+      "smart": "A New Look in blazers, our Kenton is the latest design in our signature, best-selling ponte fabric. Designed to make a statement, the clean, tailored lines of this style release into a soft peplum that flares over the hips, creating a flattering fit-and-flare silhouette. Pair it with tailored pants for a fresh take on a workwear suit, or with the matching skirt to accentuate the beautifully engineered shape of this expertly cut, striking silhouette."
+    },
+    "closure": null,
+    "carryingStyles": []
+  },
+  {
+    "id": "us-lennox-collarless-ponte-blazer-plum-caspia",
+    "modelKey": "us-lennox-collarless-ponte-blazer",
+    "name": "Lennox Collarless Ponte Blazer - Plum Caspia",
+    "kind": "jacket",
+    "brand": "Universal Standard",
+    "merchant": "Universal Standard",
+    "price": 198.0,
+    "currency": "USD",
+    "features": [
+      "smart"
+    ],
+    "editorialFeatures": [],
+    "description": "Elegant, refined, timeless.",
+    "image": "/images/us-lennox-collarless-ponte-blazer-plum-caspia.jpg",
+    "imageAlt": "Lennox Collarless Ponte Blazer - Plum Caspia",
+    "sourceUrl": "https://www.universalstandard.com/products/lennox-collarless-ponte-blazer-plum-caspia",
+    "catalogSource": "https://www.universalstandard.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "4XS",
+      "3XS",
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL",
+      "4XL"
+    ],
+    "colors": [
+      "Plum Caspia"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "variants": [
+      {
+        "id": "42581815328814",
+        "size": "4XS",
+        "sizeLabel": "4XS \u00b7 US 00-0",
+        "color": "Plum Caspia",
+        "price": 198.0,
+        "availableAtCapture": false
+      },
+      {
+        "id": "42581815361582",
+        "size": "3XS",
+        "sizeLabel": "3XS \u00b7 US 2-4",
+        "color": "Plum Caspia",
+        "price": 198.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581815394350",
+        "size": "2XS",
+        "sizeLabel": "2XS \u00b7 US 6-8",
+        "color": "Plum Caspia",
+        "price": 198.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581815427118",
+        "size": "XS",
+        "sizeLabel": "XS \u00b7 US 10-12",
+        "color": "Plum Caspia",
+        "price": 198.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581815459886",
+        "size": "S",
+        "sizeLabel": "S \u00b7 US 14-16",
+        "color": "Plum Caspia",
+        "price": 198.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581815492654",
+        "size": "M",
+        "sizeLabel": "M \u00b7 US 18-20",
+        "color": "Plum Caspia",
+        "price": 198.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581815525422",
+        "size": "L",
+        "sizeLabel": "L \u00b7 US 22-24",
+        "color": "Plum Caspia",
+        "price": 198.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581815558190",
+        "size": "XL",
+        "sizeLabel": "XL \u00b7 US 26-28",
+        "color": "Plum Caspia",
+        "price": 198.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581815590958",
+        "size": "XXL",
+        "sizeLabel": "2XL \u00b7 US 30-32",
+        "color": "Plum Caspia",
+        "price": 198.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581815623726",
+        "size": "3XL",
+        "sizeLabel": "3XL \u00b7 US 34-36",
+        "color": "Plum Caspia",
+        "price": 198.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581815656494",
+        "size": "4XL",
+        "sizeLabel": "4XL \u00b7 US 38-40",
+        "color": "Plum Caspia",
+        "price": 198.0,
+        "availableAtCapture": true
+      }
+    ],
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0838/4441/files/SHOT_29_112.jpg?v=1785262277",
+    "featureEvidence": {
+      "smart": "Elegant, refined, timeless. This collarless blazer is sharp without being overwhelming, thanks to the very slight shoulder pads. The soft and stretchy feel balances the structured look\u2014it\u2019s made from our premium mid-weight Ponte fabric that everyone loves for its comfort and versatility. The proportions were perfected to suit many body types, and allow you to easily wear this jacket open or closed. Plus, the elongated back vent makes it comfortable for all. Half lined. Lined through the front and sleeves with butterfly lining at the back. Things to note: Fits all body types"
+    },
+    "closure": null,
+    "carryingStyles": []
+  },
+  {
+    "id": "us-bianca-double-breasted-ponte-blazer-espresso",
+    "modelKey": "us-bianca-double-breasted-ponte-blazer",
+    "name": "Bianca Double Breasted Ponte Blazer - Espresso",
+    "kind": "jacket",
+    "brand": "Universal Standard",
+    "merchant": "Universal Standard",
+    "price": 218.0,
+    "currency": "USD",
+    "features": [
+      "smart"
+    ],
+    "editorialFeatures": [],
+    "description": "Modern meets of the moment.",
+    "image": "/images/us-bianca-double-breasted-ponte-blazer-espresso.jpg",
+    "imageAlt": "Bianca Double Breasted Ponte Blazer - Espresso",
+    "sourceUrl": "https://www.universalstandard.com/products/bianca-double-breasted-ponte-blazer-espresso",
+    "catalogSource": "https://www.universalstandard.com/products.json?limit=250",
+    "capturedAt": "2026-11-20",
+    "sizes": [
+      "4XS",
+      "3XS",
+      "2XS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL",
+      "4XL"
+    ],
+    "colors": [
+      "Espresso"
+    ],
+    "weightGrams": null,
+    "laptopInches": null,
+    "capacityLiters": null,
+    "variants": [
+      {
+        "id": "42581816049710",
+        "size": "4XS",
+        "sizeLabel": "4XS \u00b7 US 00-0",
+        "color": "Espresso",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581816082478",
+        "size": "3XS",
+        "sizeLabel": "3XS \u00b7 US 2-4",
+        "color": "Espresso",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581816115246",
+        "size": "2XS",
+        "sizeLabel": "2XS \u00b7 US 6-8",
+        "color": "Espresso",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581816148014",
+        "size": "XS",
+        "sizeLabel": "XS \u00b7 US 10-12",
+        "color": "Espresso",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581816180782",
+        "size": "S",
+        "sizeLabel": "S \u00b7 US 14-16",
+        "color": "Espresso",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581816213550",
+        "size": "M",
+        "sizeLabel": "M \u00b7 US 18-20",
+        "color": "Espresso",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581816246318",
+        "size": "L",
+        "sizeLabel": "L \u00b7 US 22-24",
+        "color": "Espresso",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581816279086",
+        "size": "XL",
+        "sizeLabel": "XL \u00b7 US 26-28",
+        "color": "Espresso",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581816311854",
+        "size": "XXL",
+        "sizeLabel": "2XL \u00b7 US 30-32",
+        "color": "Espresso",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581816344622",
+        "size": "3XL",
+        "sizeLabel": "3XL \u00b7 US 34-36",
+        "color": "Espresso",
+        "price": 218.0,
+        "availableAtCapture": true
+      },
+      {
+        "id": "42581816377390",
+        "size": "4XL",
+        "sizeLabel": "4XL \u00b7 US 38-40",
+        "color": "Espresso",
+        "price": 218.0,
+        "availableAtCapture": true
+      }
+    ],
+    "imageSourceUrl": "https://cdn.shopify.com/s/files/1/0838/4441/files/biancabrn.jpg?v=1790468401",
+    "featureEvidence": {
+      "smart": "Modern meets of the moment. This double-breasted blazer is essential. The soft and stretchy feel balances the structured look\u2014it\u2019s made from our premium mid-weight Ponte fabric that everyone loves for its comfort and versatility. The proportions were perfected to suit many body types, and allow you to easily wear this jacket open or closed. If you\u2019re looking for a curvy fit, this silhouette features princess seams and the most waist suppression of all our blazers. At the same time, the bracelet sleeves make this a petite-friendly style and the elongated back vent makes it comfortable for many different body types. Half lined. Lined through the front and sleeves with butterfly lining at the back. Things to note: Petite-friendly Curve-friendly Fits all body types"
+    },
+    "closure": null,
+    "carryingStyles": []
   }
 ];

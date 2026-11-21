@@ -2,6 +2,7 @@ import {catalog} from './catalog.js';
 export const featureWords={waterproof:'waterproof',rain:'(?:water[- ]resistant|rain[- ]resistant|rain protection)',laptop:'(?:laptop sleeve|laptop protection)',ziptop:'(?:zip[- ]top|zipper|zip closure)',smart:'(?:formal|tailored|polished)',easyclean:'(?:washable|easy[- ]clean)',roomy:'(?:roomy|spacious|large capacity)',organizer:'(?:organized|organised|compartments)',packable:'packable',minimal:'minimal(?:ist)?',light:'lightweight'};
 export function parseQuery(query,context,{previousResultIds=[]}={}){
  const q=query.trim().toLowerCase();const c=structuredClone(context.constraints),adds=[],removes=[],preferred=[];let recognized=false;
+ if(context.kind==='jacket'&&/conference|presentation|blazer|sportcoat/.test(q)&&!/casual|informal/.test(q)){if(!c.features.includes('smart'))c.features.push('smart');adds.push('smart');recognized=true;}
  const budget=q.match(/(?:under|below|up to|max(?:imum)?(?: price)?|budget(?: of)?)\s*\$?\s*(\d+(?:\.\d+)?)/);if(budget&&!/^\s*(?:g\b|grams?\b|kg\b|inch)/.test(q.slice(budget.index+budget[0].length))){c.budget=Number(budget[1]);recognized=true;}
  if(/(?:remove|clear|ignore|without|no) (?:the |my )?(?:budget|price limit)/.test(q)){c.budget=null;recognized=true;}
  for(const [feature,words] of Object.entries(featureWords)){

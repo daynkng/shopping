@@ -16,7 +16,7 @@ export function validateConstraints(value,ids) {
 export function resolveVariant(p,c) {
  const variants=p.variants.filter(v=>v.availableAtCapture&&(!c.size||v.size===c.size)&&(!c.color||v.color?.toLowerCase().includes(c.color.toLowerCase()))&&(c.budget===null||v.price<=c.budget));
  const v=variants.find(v=>v.size==='M')||variants[0];
- return v?{...p,price:v.price,variantId:v.id,selectedSize:v.size,selectedColor:v.color,merchantUrl:p.sourceUrl+'?variant='+v.id}:null;
+ return v?{...p,price:v.price,variantId:v.id,selectedSize:v.size,selectedSizeLabel:v.sizeLabel||v.size,selectedColor:v.color,merchantUrl:p.sourceUrl+'?variant='+v.id}:null;
 }
 export function eligible(p,context) {
  const c=context.constraints;

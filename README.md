@@ -104,3 +104,5 @@ Search order is context retrieval + approved learning + suppression policy → s
 
 ## Editable profiles and preview connections
 My Context contains optional gender, height in centimeters, clothing size, and category budgets. Fields begin unset and are stored separately per profile in this browser. Size and budget seed new searches; explicit chat requests and filter edits override them. Height and gender do not establish garment fit. Ranking explanations use sourced product attributes. Activity is under Settings. Unverified integrations display Connected · Demo preview and continue using built-in shopping; live calls still require verified credentials.
+
+Conference presentation requests require tailored styling. Seven Universal Standard blazer models replace casual jackets in the 60-product catalog. Manufacturer size labels are retained; confirm sizing with the merchant. Existing chats are backed up locally and reseeded once for this presentation refresh.
